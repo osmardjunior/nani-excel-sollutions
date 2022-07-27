@@ -1,0 +1,58 @@
+.label {
+	position: relative;
+
+	padding: 0.75rem 1.75rem;
+	// background-color: var(--clr-brand-pumpkin);
+
+	width: fit-content;
+
+	color: var(--clr-text-100);
+
+	font-weight: 700;
+	font-size: 1.125rem;
+
+	isolation: isolate;
+}
+
+.borderOne,
+.borderTwo {
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+
+		--clip-size: 0.75rem;
+
+		clip-path: polygon(
+			var(--clip-size) 0%,
+			100% 0,
+			calc(100% - var(--clip-size)) 100%,
+			0% 100%
+		);
+
+		z-index: -1;
+	}
+
+	&::before {
+		inset: 0px;
+
+		background-color: var(--clr-text-100);
+	}
+
+	&::after {
+		--clip-size: 10px;
+		inset-inline: 5px;
+		inset-block: 4px;
+		background-color: var(--clr-surface-100);
+	}
+}
+
+.borderTwo {
+	&::before,
+	&::after {
+		$offset: 0.75rem;
+
+		transform: translate($offset, $offset);
+		z-index: -2;
+	}
+}

@@ -2,10 +2,19 @@
 	padding: 0.75rem 1.75rem;
 	background-color: var(--clr-brand-pumpkin);
 
-	clip-path: polygon(10% 0%, 100% 0, 90% 100%, 0% 100%);
+	width: fit-content;
 
 	color: var(--clr-surface-100);
 
 	font-weight: 700;
 	font-size: 1.125rem;
+
+	--clip-size: 0.75rem;
+
+	clip-path: polygon(
+		var(--clip-size) 0%,
+		100% 0,
+		calc(100% - var(--clip-size)) 100%,
+		0% 100%
+	);
 }

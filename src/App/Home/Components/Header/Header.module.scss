@@ -1,0 +1,89 @@
+@use "../../../Styles/Abstracts/" as *;
+
+.header {
+	display: grid;
+	gap: Min(1vw + 1rem, 3rem);
+
+	width: 100%;
+	height: 100vh;
+
+	@include media(lg) {
+		grid-template-columns: 4fr 5fr;
+	}
+}
+
+.container {
+	$padding: 7rem;
+
+	display: grid;
+	gap: 1rem;
+
+	margin: auto;
+	padding-block: $padding;
+
+	width: Min(100% - $padding, 100vw - 2rem);
+}
+
+.title {
+	color: var(--clr-brand-aquamarine);
+
+	text-transform: uppercase;
+
+	font-style: italic;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.list {
+	display: grid;
+	gap: 0.25rem;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+
+		&::before {
+			content: "";
+			display: inline-block;
+
+			width: 4px;
+			aspect-ratio: 1/1;
+
+			background-color: var(--clr-text-100);
+
+			border-radius: var(--rounded-full);
+		}
+
+		&:last-child {
+			position: relative;
+
+			width: fit-content;
+
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.025em;
+
+			&::before {
+				content: none;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: calc(100% + 2px);
+				inset-inline: 0;
+
+				height: 2px;
+				background-color: var(--clr-text-100);
+			}
+		}
+	}
+}
+
+.label {
+	margin-bottom: 5rem;
+}
+.button {
+	margin-top: 5rem;
+}

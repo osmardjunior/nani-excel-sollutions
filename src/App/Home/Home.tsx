@@ -1,10 +1,10 @@
-import Button from "./Components/Button";
 import styles from "./Home.module.scss";
+import Header from "./Components/Header/Header";
 
 function Home() {
   return (
     <>
-      <Button title={"Button to test"} />
+      <Header />
     </>
   );
 }
