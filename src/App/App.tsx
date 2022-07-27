@@ -1,6 +1,6 @@
 import "./Styles/_index.scss";
 
-import Home from "./Pages/Home/Home";
+import Home from "./Home/Home";
 
 function App() {
   return (
