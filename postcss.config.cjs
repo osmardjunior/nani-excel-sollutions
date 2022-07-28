@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     doiuse: {},
+    autoprefixer: {},
     cssnano: {
       preset: [
         "advanced",

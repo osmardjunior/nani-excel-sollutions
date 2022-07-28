@@ -2,7 +2,7 @@
 
 .header {
 	display: grid;
-	gap: Min(1vw + 1rem, 3rem);
+	// gap: Min(1vw + 1rem, 3rem);
 
 	width: 100%;
 	height: Max(100vmin, 100vh - 2rem);
@@ -16,22 +16,22 @@
 
 .container {
 	$padding: 7rem;
+	$half-padding: calc(3.5rem + 1vw);
 
 	display: grid;
 	grid-auto-rows: min-content;
 	place-items: center;
 	gap: 1rem;
 
-	margin-inline: var(--margin-inline_, auto);
-
 	padding-block: $padding;
+	padding-inline: $half-padding;
 
-	width: Min(100% - ($padding * 0.5), 100vw - 2rem);
+	width: Min(100%, 100vw - 2rem);
 
 	@include media(lg) {
 		place-items: unset;
 		place-content: center;
-		--margin-inline: auto 0;
+		padding-inline: $half-padding 0;
 	}
 }
 
@@ -58,11 +58,7 @@
 	justify-items: center;
 
 	&__item {
-		display: flex;
-		align-items: center;
-		gap: 0.25rem;
-
-		width: max-content;
+		text-align: center;
 
 		&::before {
 			content: "";
@@ -70,6 +66,9 @@
 
 			width: 4px;
 			aspect-ratio: 1/1;
+
+			margin-bottom: calc(1ex - 5px);
+			margin-right: 0.25rem;
 
 			background-color: var(--clr-text-100);
 

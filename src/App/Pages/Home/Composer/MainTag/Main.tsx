@@ -1,3 +1,5 @@
+import Button from "../../Components/Button/Button";
+import Card from "../../Components/Cards/Card";
 import styles from "./Main.module.scss";
 
 function Main() {
@@ -17,6 +19,15 @@ function Main() {
         <div className={styles.image}>
           <img src="https://picsum.photos/1024/768" alt="" />
         </div>
+
+        <ul className={styles.list}>
+          <Card text={"Material didático próprio"} />
+          <Card text={"Estudo de casos reais"} />
+          <Card text={"Instrutores que atuam no mercado"} />
+          <Card text={"Pensamento analítico e Excel"} />
+        </ul>
+
+        <Button title="Garanta sua Vaga" classes={styles.button} />
       </section>
     </main>
   );

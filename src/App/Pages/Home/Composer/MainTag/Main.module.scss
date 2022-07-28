@@ -1,6 +1,6 @@
 .main {
 	display: grid;
-	justify-content: center;
+	justify-items: center;
 
 	isolation: isolate;
 
@@ -9,12 +9,42 @@
 }
 
 .sectionPhoto {
+	--offset_: 1rem;
+
+	position: relative;
+
 	display: grid;
 	place-items: center;
-	gap: 3rem;
+	gap: 4rem;
+
+	overflow: hidden;
+	width: 100%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset-block: 0;
+		right: 0;
+
+		margin: auto;
+
+		border-radius: 53% 47% 34% 66% / 63% 46% 54% 37%;
+
+		filter: blur(10rem);
+		opacity: 0.4;
+		clip-path: inset(-100% 50% -100% -100%);
+
+		height: 40rem;
+		width: 20rem;
+		transform: translateX(50%);
+
+		background-color: var(--clr-brand-aquamarine);
+	}
 }
 
 .title {
+	margin-inline: auto;
+
 	width: Min(30ch, 100vw - 2rem);
 
 	text-align: center;
@@ -43,15 +73,14 @@
 	width: Min(100vw - 3rem, 50rem);
 
 	&::before {
-		$offset: 1rem;
 		content: "";
 		position: absolute;
 		inset: 0;
 
-		transform: translate($offset, $offset);
+		transform: translate(var(--offset_), var(--offset_));
 
-		z-index: -1;
 		border: 3px solid var(--clr-brand-pumpkin);
+		z-index: -1;
 	}
 
 	> img {
@@ -60,4 +89,21 @@
 		object-fit: cover;
 		object-position: center;
 	}
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+
+	margin-inline: auto;
+
+	width: Min(100%, 100vw - 4rem);
+}
+
+.list,
+.button {
+	margin-top: var(--offset_);
 }
