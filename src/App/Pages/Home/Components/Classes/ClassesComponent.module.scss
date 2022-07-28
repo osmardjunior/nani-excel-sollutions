@@ -5,6 +5,21 @@
 	place-items: center;
 	gap: var(--gap_);
 
+	> footer {
+		display: grid;
+		gap: inherit;
+	}
+
+	&:first-of-type {
+		.label {
+			color: var(--clr-surface-100);
+
+			> div:first-child:after {
+				--label-bg: var(--clr-brand-aquamarine);
+			}
+		}
+	}
+
 	&:last-child {
 		.label {
 			--label-text: var(--clr-brand-pumpkin);
@@ -20,14 +35,6 @@
 	--label-text: var(--clr-brand-aquamarine);
 	--label-padding-x: 3.5rem;
 	--label-font-size: 1.625rem;
-
-	&:first-child {
-		color: var(--clr-surface-100);
-
-		> div:first-child:after {
-			--label-bg: var(--clr-brand-aquamarine);
-		}
-	}
 }
 
 .date {
@@ -85,7 +92,7 @@
 	&::before {
 		content: "";
 		width: 2px;
-		height: 10rem;
+		height: 8rem;
 
 		background-color: hsl(var(--clr-brand-aquamarine-hsl) / var(--alpha_));
 	}

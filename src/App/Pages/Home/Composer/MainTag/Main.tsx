@@ -43,10 +43,46 @@ const ClassesSection = () => {
         </h3>
       </header>
 
-      <ClassesComponent />
-      <ClassesComponent />
-      <ClassesComponent />
-      <ClassesComponent />
+      <ClassesComponent
+        idLabelledbyCard="class-1"
+        title="Aula 1"
+        dateDay="09/08"
+        dateString="Terça-feira"
+        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
+        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
+        eveniet."
+      />
+      <ClassesComponent
+        idLabelledbyCard="class-2"
+        title="Aula 2"
+        dateDay="10/08"
+        dateString="Quarta-feira"
+        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
+        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
+        eveniet."
+      />
+      <ClassesComponent
+        idLabelledbyCard="class-3"
+        title="Aula 3"
+        dateDay="11/08"
+        dateString="Quinta-feira"
+        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
+        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
+        eveniet."
+      />
+      <ClassesComponent
+        idLabelledbyCard="class-4"
+        title="Masterclass"
+        dateDay="12/08"
+        dateString="Sexta-feira"
+        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
+        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
+        eveniet."
+      />
     </section>
   );
 };

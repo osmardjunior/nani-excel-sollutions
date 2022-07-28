@@ -1,24 +1,29 @@
 import Label from "../Label/Label";
 import styles from "./ClassesComponent.module.scss";
 
-const Card = ({ idLabelledby }: any) => {
+const Card = ({
+  idLabelledbyCard,
+  title,
+  dateDay,
+  dateString,
+  description,
+}: any) => {
   return (
-    <section className={styles.section} aria-labelledby={idLabelledby}>
-      <Label title="Aula 1" classes={styles.label} />
+    <section className={styles.section} aria-labelledby={idLabelledbyCard}>
+      <header>
+        <Label title={title} classes={styles.label} itemID={idLabelledbyCard} />
+      </header>
 
       <p className={styles.date}>
-        <b className={styles.date__bold}>09/08</b>
-        Terça Feira
+        <b className={styles.date__bold}>{dateDay}</b>
+        {dateString}
       </p>
 
-      <p className={styles.description}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
-        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
-        eveniet.
-      </p>
+      <footer>
+        <p className={styles.description}>{description}</p>
 
-      <div className={styles.lineBall} aria-hidden={true}></div>
+        <div className={styles.lineBall} aria-hidden={true}></div>
+      </footer>
     </section>
   );
 };
