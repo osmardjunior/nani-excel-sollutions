@@ -5,7 +5,7 @@ import styles from "./Main.module.scss";
 
 const PhotoSection = () => {
   const idLabelledby = "description-title";
-
+ 
   return (
     <section className={styles.photoSection} aria-labelledby={idLabelledby}>
       <header>
@@ -22,12 +22,12 @@ const PhotoSection = () => {
 
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
-        <Card text={"Estudo de casos reais"} icon="pensil" />
+        <Card text={"Estudos de casos reais"} icon="pensil" />
         <Card text={"Instrutores que atuam no mercado"} icon="person" />
         <Card text={"Pensamento analítico e Excel"} icon="grath" />
       </ul>
 
-      <Button title="Garanta sua Vaga" classes={styles.photoSection__button} />
+      <Button title="Garanta sua vaga" classes={styles.photoSection__button} />
     </section>
   );
 };
@@ -40,13 +40,13 @@ const ClassesSection = () => {
       <header className={styles.classSection__header}>
         <h3 className={styles.classesSection__title} itemID={idLabelledby}>
           O que você vai aprender na
-          <span>&nbsp;Semana Excel na Pratica</span>
+          <span>&nbsp;Semana Excel na Prática</span>
         </h3>
       </header>
 
       <ClassesComponent
         idLabelledbyCard="class-1"
-        title="Aula 1"
+        title="AULA 1"
         dateDay="09/08"
         dateString="Terça-feira"
         description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
@@ -56,7 +56,7 @@ const ClassesSection = () => {
       />
       <ClassesComponent
         idLabelledbyCard="class-2"
-        title="Aula 2"
+        title="AULA 2"
         dateDay="10/08"
         dateString="Quarta-feira"
         description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
@@ -66,7 +66,7 @@ const ClassesSection = () => {
       />
       <ClassesComponent
         idLabelledbyCard="class-3"
-        title="Aula 3"
+        title="AULA 3"
         dateDay="11/08"
         dateString="Quinta-feira"
         description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
@@ -76,7 +76,7 @@ const ClassesSection = () => {
       />
       <ClassesComponent
         idLabelledbyCard="class-4"
-        title="Masterclass"
+        title="MASTERCLASS"
         dateDay="12/08"
         dateString="Sexta-feira"
         description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
