@@ -2,6 +2,7 @@ import Button from "../../Components/Button/Button";
 import Card from "../../Components/Cards/Card";
 import ClassesComponent from "../../Components/Classes/ClassesComponent";
 import styles from "./Main.module.scss";
+
 const PhotoSection = () => {
   const idLabelledby = "description-title";
 
@@ -20,10 +21,10 @@ const PhotoSection = () => {
       </div>
 
       <ul className={styles.photoSection__list}>
-        <Card text={"Material didático próprio"} />
-        <Card text={"Estudo de casos reais"} />
-        <Card text={"Instrutores que atuam no mercado"} />
-        <Card text={"Pensamento analítico e Excel"} />
+        <Card text={"Material didático próprio"} icon="book" />
+        <Card text={"Estudo de casos reais"} icon="pensil" />
+        <Card text={"Instrutores que atuam no mercado"} icon="person" />
+        <Card text={"Pensamento analítico e Excel"} icon="grath" />
       </ul>
 
       <Button title="Garanta sua Vaga" classes={styles.photoSection__button} />

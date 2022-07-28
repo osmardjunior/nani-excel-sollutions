@@ -42,16 +42,11 @@
 	display: grid;
 	place-items: center;
 
-	// width: $size;
-	// height: ($size + $bottom-space * 0.75);
-
 	padding-top: $padding;
 	padding-inline: $padding;
-	padding-bottom: $bottom-space + $bottom-space;
+	padding-bottom: $padding + $bottom-space * 0.75;
 
 	transform: translateY(calc(-50% + #{$bottom-space} / 2));
-
-	padding-bottom: $bottom-space;
 
 	background-color: var(--clr-brand-aquamarine);
 
@@ -62,6 +57,11 @@
 		0 calc(100% - $bottom-space),
 		0 0
 	);
+
+	> img {
+		width: 1.875rem;
+		height: auto;
+	}
 }
 
 .text {

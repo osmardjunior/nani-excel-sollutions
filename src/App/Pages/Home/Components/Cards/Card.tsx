@@ -4,7 +4,7 @@ const Card = ({ icon, classes, text }: any) => {
   return (
     <li className={`${styles.card} ${classes}`}>
       <div className={styles.icon} aria-hidden={true}>
-        {icon}
+        <img src={`/assets/${icon}.svg`} alt="Icon" />
       </div>
       <p className={styles.text}>{text}</p>
     </li>
