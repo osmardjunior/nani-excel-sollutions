@@ -21,6 +21,10 @@
 	&:focus-visible {
 		background-color: var(--clr-text-100);
 		color: var(--clr-surface-100);
+
+		.icon {
+			--translateY_: -0.5rem;
+		}
 	}
 
 	&::before {
@@ -51,11 +55,22 @@
 	padding-inline: $padding;
 	padding-bottom: $padding + $bottom-space * 0.75;
 
-	transform: translateY(calc(-50% + #{$bottom-space} / 2));
+	transform: translateY(
+		calc(-50% + #{$bottom-space} / 2 + var(--translateY_, 0rem))
+	);
 
 	background-color: var(--clr-brand-aquamarine);
 
-	clip-path: polygon(100% 0, 100% calc(100% - $bottom-space), 50% 100%, 0 calc(100% - $bottom-space), 0 0);
+	clip-path: polygon(
+		100% 0,
+		100% calc(100% - $bottom-space),
+		50% 100%,
+		0 calc(100% - $bottom-space),
+		0 0
+	);
+
+	will-change: transform;
+	transition: transform 200ms ease-out;
 
 	> img {
 		width: 1.875rem;
