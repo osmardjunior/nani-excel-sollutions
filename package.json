@@ -13,6 +13,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "^2.0.0",
+    "@vitejs/plugin-react": "^2.0.0",
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.12",
     "cssnano-preset-advanced": "^5.3.8",
