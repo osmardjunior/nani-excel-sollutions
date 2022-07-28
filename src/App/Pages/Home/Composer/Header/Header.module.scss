@@ -2,10 +2,14 @@
 
 .header {
 	display: grid;
-	// gap: Min(1vw + 1rem, 3rem);
 
 	width: 100%;
-	height: Max(100vmin, 100vh - 2rem);
+	// height: Max(100vmin, 100vh - 2rem);
+
+	background-image: url("/public/assets/banner_1.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
 
 	user-select: none;
 

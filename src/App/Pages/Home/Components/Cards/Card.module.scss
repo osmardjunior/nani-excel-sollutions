@@ -34,15 +34,20 @@
 
 .icon {
 	$bottom-space: 1rem;
-	$size: 3rem;
+	$padding: 0.875rem;
+
 	position: absolute;
 	top: 0;
 
 	display: grid;
 	place-items: center;
 
-	width: $size;
-	height: ($size + $bottom-space * 0.75);
+	// width: $size;
+	// height: ($size + $bottom-space * 0.75);
+
+	padding-top: $padding;
+	padding-inline: $padding;
+	padding-bottom: $bottom-space + $bottom-space;
 
 	transform: translateY(calc(-50% + #{$bottom-space} / 2));
 

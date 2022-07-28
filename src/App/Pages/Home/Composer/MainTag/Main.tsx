@@ -16,7 +16,7 @@ const PhotoSection = () => {
       </header>
 
       <div className={styles.photoSection__image}>
-        <img src="https://picsum.photos/1024/768" alt="" />
+        <img src="https://picsum.photos/1024/768" alt="Video" />
       </div>
 
       <ul className={styles.photoSection__list}>
