@@ -1,6 +1,6 @@
 import styles from "./Card.module.scss";
 
-const Card = ({ icon, classes, text }: any) => {
+const Card = ({ icon, classes, text }) => {
   return (
     <li className={`${styles.card} ${classes}`}>
       <div className={styles.icon} aria-hidden={true}>

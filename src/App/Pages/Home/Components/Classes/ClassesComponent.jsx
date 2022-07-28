@@ -7,7 +7,7 @@ const Card = ({
   dateDay,
   dateString,
   description,
-}: any) => {
+}) => {
   return (
     <section className={styles.section} aria-labelledby={idLabelledbyCard}>
       <header>

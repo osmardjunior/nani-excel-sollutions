@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import Button from "../../Components/Button/Button";
 import Label from "../../Components/Label/Label";
 
-function ListItems({ info }: { info: string }) {
+function ListItems({ info }) {
   return <li className={styles.list__item}>{info}</li>;
 }
 

@@ -1,6 +1,6 @@
 import styles from "./Label.module.scss";
 
-const Label = ({ title, classes, theme, label }: any) => {
+const Label = ({ title, classes, theme, label }) => {
   const themeClass = theme ? styles.labelPrimary : styles.labelSecondary;
   const labelClass = styles.label;
 
