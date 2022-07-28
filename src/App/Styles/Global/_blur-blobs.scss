@@ -1,0 +1,33 @@
+[class*="blur-blobs"] {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset-block: 0;
+
+		margin-block: auto;
+
+		border-radius: 100%;
+
+		filter: blur(12rem);
+		opacity: 0.4;
+
+		height: 40rem;
+		width: 20rem;
+		transform: translateX(var(--translateX, 50%));
+
+		background-color: var(--clr-brand-aquamarine);
+	}
+}
+
+.blur-blobs {
+	&--right::before {
+		right: 0;
+	}
+
+	&--left::before {
+		left: 0;
+		--translateX: -50%;
+	}
+}

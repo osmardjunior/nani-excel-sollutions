@@ -5,9 +5,12 @@ import styles from "./Main.module.scss";
 
 const PhotoSection = () => {
   const idLabelledby = "description-title";
- 
+
   return (
-    <section className={styles.photoSection} aria-labelledby={idLabelledby}>
+    <section
+      className={`${styles.photoSection} blur-blobs--right`}
+      aria-labelledby={idLabelledby}
+    >
       <header>
         <h2 className={styles.photoSection__title} itemID={idLabelledby}>
           Com a metodologia Excel Solutions, é possível a prender o básico do
@@ -36,7 +39,10 @@ const ClassesSection = () => {
   const idLabelledby = "classes-title";
 
   return (
-    <section className={styles.classesSection} aria-labelledby={idLabelledby}>
+    <section
+      className={`${styles.classesSection} blur-blobs--left`}
+      aria-labelledby={idLabelledby}
+    >
       <header className={styles.classSection__header}>
         <h3 className={styles.classesSection__title} itemID={idLabelledby}>
           O que você vai aprender na
