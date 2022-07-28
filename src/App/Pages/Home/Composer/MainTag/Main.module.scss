@@ -8,7 +8,7 @@
 	margin-bottom: 50vmax;
 }
 
-.sectionPhoto {
+.photoSection {
 	--offset_: 1rem;
 
 	position: relative;
@@ -40,70 +40,93 @@
 
 		background-color: var(--clr-brand-aquamarine);
 	}
-}
 
-.title {
-	margin-inline: auto;
+	&__title {
+		margin-inline: auto;
 
-	width: Min(30ch, 100vw - 2rem);
+		width: Min(30ch, 100vw - 2rem);
 
-	text-align: center;
+		text-align: center;
 
-	font-style: italic;
-	font-size: 2rem;
-	font-weight: 700;
+		font-style: italic;
+		font-size: 2rem;
+		font-weight: 700;
 
-	&__accent {
-		display: inline-grid;
-		grid-template-rows: 1fr auto;
-		color: var(--clr-brand-pumpkin);
+		> span {
+			display: inline-grid;
+			grid-template-rows: 1fr auto;
+			color: var(--clr-brand-pumpkin);
 
-		&::after {
-			content: "";
-			position: relative;
-			bottom: 2px;
-			height: 3px;
-			background-color: currentColor;
+			&::after {
+				content: "";
+				height: 3px;
+				background-color: currentColor;
+			}
 		}
 	}
-}
 
-.image {
-	position: relative;
-	width: Min(100vw - 3rem, 50rem);
+	&__image {
+		position: relative;
+		width: Min(100vw - 3rem, 50rem);
 
-	&::before {
-		content: "";
-		position: absolute;
-		inset: 0;
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
 
-		transform: translate(var(--offset_), var(--offset_));
+			transform: translate(var(--offset_), var(--offset_));
 
-		border: 3px solid var(--clr-brand-pumpkin);
-		z-index: -1;
+			border: 3px solid var(--clr-brand-pumpkin);
+			z-index: -1;
+		}
+
+		> img {
+			width: 100%;
+			aspect-ratio: var(--ratio-widescreen);
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 
-	> img {
-		width: 100%;
-		aspect-ratio: var(--ratio-widescreen);
-		object-fit: cover;
-		object-position: center;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 5rem;
+
+		margin-inline: auto;
+
+		width: Min(100%, 100vw - 4rem);
+	}
+
+	&__list,
+	&__button {
+		margin-top: var(--offset_);
 	}
 }
 
-.list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 5rem;
+.classesSection {
+	display: grid;
+	place-content: center;
+	gap: 3rem;
 
-	margin-inline: auto;
+	margin-top: 7rem;
 
-	width: Min(100%, 100vw - 4rem);
-}
+	&__header {
+		margin-bottom: 5rem;
+	}
 
-.list,
-.button {
-	margin-top: var(--offset_);
+	&__title {
+		display: grid;
+
+		text-align: center;
+
+		font-weight: 700;
+		font-size: var(--font-size-flued-500);
+
+		> span {
+			color: var(--clr-brand-pumpkin);
+		}
+	}
 }

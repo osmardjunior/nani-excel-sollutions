@@ -1,15 +1,20 @@
+$label-bg: var(--label-bg, var(--clr-surface-100));
+$label-text: var(--label-text, var(--clr-text-100));
+
 .label {
 	position: relative;
 
-	padding: 0.75rem 1.75rem;
+	padding-block: var(--label-padding-y, 0.75rem);
+	padding-inline: var(--label-padding-x, 1.75rem);
 
 	width: fit-content;
 	height: fit-content;
 
-	color: var(--clr-text-100);
+	color: $label-text;
 
 	font-weight: 700;
-	font-size: 1.125rem;
+	font-size: var(--label-font-size, 1.125rem);
+	font-style: italic;
 
 	isolation: isolate;
 	user-select: none;
@@ -22,10 +27,10 @@
 	&:focus,
 	&:focus-within,
 	&:focus-visible {
-		color: var(--clr-surface-100);
+		color: $label-bg;
 
 		.borderOne::after {
-			background-color: var(--clr-text-100);
+			background-color: $label-text;
 		}
 	}
 }
@@ -55,14 +60,14 @@
 	&::before {
 		inset: 0px;
 
-		background-color: var(--clr-text-100);
+		background-color: $label-text;
 	}
 
 	&::after {
 		--clip-size: 10px;
 		inset-inline: 5px;
 		inset-block: 4px;
-		background-color: var(--clr-surface-100);
+		background-color: $label-bg;
 	}
 }
 
