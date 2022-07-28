@@ -3,6 +3,7 @@
 	background-color: var(--clr-brand-pumpkin);
 
 	width: fit-content;
+	height: fit-content;
 
 	color: var(--clr-surface-100);
 
@@ -17,4 +18,15 @@
 		calc(100% - var(--clip-size)) 100%,
 		0% 100%
 	);
+
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-within,
+	&:focus-visible {
+		background-color: var(--clr-brand-aquamarine);
+	}
 }

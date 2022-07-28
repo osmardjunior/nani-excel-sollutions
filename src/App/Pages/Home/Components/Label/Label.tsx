@@ -5,11 +5,11 @@ const Label = ({ title, classes, theme }: any) => {
   const buttonClass = styles.label;
 
   return (
-    <div className={`${buttonClass} ${themeClass} ${classes}`}>
+    <h5 className={`${buttonClass} ${themeClass} ${classes}`} tabIndex={0}>
       {title}
       <div className={styles.borderOne}></div>
       <div className={styles.borderTwo}></div>
-    </div>
+    </h5>
   );
 };
 

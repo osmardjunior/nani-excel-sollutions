@@ -2,9 +2,9 @@
 	position: relative;
 
 	padding: 0.75rem 1.75rem;
-	// background-color: var(--clr-brand-pumpkin);
 
 	width: fit-content;
+	height: fit-content;
 
 	color: var(--clr-text-100);
 
@@ -12,10 +12,27 @@
 	font-size: 1.125rem;
 
 	isolation: isolate;
+	user-select: none;
+
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-within,
+	&:focus-visible {
+		color: var(--clr-surface-100);
+
+		.borderOne::after {
+			background-color: var(--clr-text-100);
+		}
+	}
 }
 
 .borderOne,
 .borderTwo {
+	transition: inherit;
 	&::before,
 	&::after {
 		content: "";
@@ -31,6 +48,8 @@
 		);
 
 		z-index: -1;
+
+		transition: inherit;
 	}
 
 	&::before {

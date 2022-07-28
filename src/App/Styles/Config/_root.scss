@@ -1,5 +1,31 @@
+body {
+	scrollbar-width: thin;
+	scrollbar-color: var(--clr-brand-aquamarine);
+
+	overflow: auto;
+	overflow: overlay;
+
+	&::-webkit-scrollbar {
+		width: 0.125rem;
+
+		&-thumb {
+			background-color: var(--clr-brand-aquamarine);
+			background-image: linear-gradient(
+				0deg,
+				var(--clr-surface-100) 0%,
+				var(--clr-brand-aquamarine) 50%,
+				var(--clr-surface-100) 100%
+			);
+		}
+
+		&-track {
+			background-color: transparent;
+		}
+	}
+}
+
 .root {
-	height: 100%;
+	display: grid;
 
 	background-color: var(--clr-surface-100);
 	color: var(--clr-text-100);

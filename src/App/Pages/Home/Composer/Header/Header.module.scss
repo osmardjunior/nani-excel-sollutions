@@ -5,10 +5,12 @@
 	gap: Min(1vw + 1rem, 3rem);
 
 	width: 100%;
-	height: 100vh;
+	height: Max(100vmin, 100vh - 2rem);
+
+	user-select: none;
 
 	@include media(lg) {
-		grid-template-columns: 4fr 5fr;
+		grid-template-columns: 7fr 8fr;
 	}
 }
 
@@ -16,32 +18,51 @@
 	$padding: 7rem;
 
 	display: grid;
+	grid-auto-rows: min-content;
+	place-items: center;
 	gap: 1rem;
 
-	margin: auto;
+	margin-inline: var(--margin-inline_, auto);
+
 	padding-block: $padding;
 
-	width: Min(100% - $padding, 100vw - 2rem);
+	width: Min(100% - ($padding * 0.5), 100vw - 2rem);
+
+	@include media(lg) {
+		place-items: unset;
+		place-content: center;
+		--margin-inline: auto 0;
+	}
 }
 
 .title {
 	color: var(--clr-brand-aquamarine);
 
 	text-transform: uppercase;
+	text-align: var(--align_, center);
 
 	font-style: italic;
-	font-size: 2rem;
+	font-size: 2.25rem;
 	font-weight: 700;
+
+	@include media(sm) {
+		--align_: start;
+	}
 }
 
 .list {
 	display: grid;
-	gap: 0.25rem;
+	gap: 0.5rem;
+	font-size: 1.125rem;
+
+	justify-items: center;
 
 	&__item {
 		display: flex;
 		align-items: center;
 		gap: 0.25rem;
+
+		width: max-content;
 
 		&::before {
 			content: "";
@@ -77,6 +98,14 @@
 				height: 2px;
 				background-color: var(--clr-text-100);
 			}
+		}
+	}
+
+	@include media(sm) {
+		justify-items: start;
+
+		&__item {
+			width: auto;
 		}
 	}
 }
