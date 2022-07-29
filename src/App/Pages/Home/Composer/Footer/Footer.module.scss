@@ -1,0 +1,16 @@
+.image {
+   
+
+	width: 100%;
+
+	background-image: url("/nath-propject-ibanks/public/assets/linhas.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+
+	user-select: none;
+
+	@include media(lg) {
+		grid-template-columns: 7fr 8fr;
+	}
+}
