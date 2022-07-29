@@ -1,16 +1,91 @@
-.image {
-   
+@use "../../../../Styles/Abstracts/" as *;
 
-	width: 100%;
+.footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
 
-	background-image: url("/nath-propject-ibanks/public/assets/linhas.png");
-	background-repeat: no-repeat;
-	background-position: left;
-	background-size: cover;
+.wrapper {
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+
+	padding-block: 7rem;
 
 	user-select: none;
 
-	@include media(lg) {
-		grid-template-columns: 7fr 8fr;
+	&::before {
+		content: "";
+
+		grid-row: 3/3;
+
+		width: 5rem;
+		height: 4px;
+
+		background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
+	}
+
+	&__text {
+		width: Min(35ch, 100vw - 2rem);
+
+		color: var(--clr-brand-pumpkin);
+
+		text-align: center;
+
+		font-style: italic;
+		font-size: 1.25rem;
+		font-weight: 700;
 	}
 }
+
+.form {
+	display: grid;
+	grid-auto-rows: min-content;
+	place-content: center;
+	gap: 1rem;
+
+	border: 2px solid var(--clr-text-100);
+
+	margin: 7rem;
+
+	&__select,
+	&__input {
+		border: 0;
+		padding: 0.875rem 1.25rem;
+
+		background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
+	}
+}
+
+.social {
+	grid-column: 1/-1;
+
+	display: grid;
+	place-items: center;
+	gap: 1rem;
+
+	padding-block: 2rem;
+
+	user-select: none;
+
+	&__links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	&::before {
+		content: "";
+
+		grid-row: 2/2;
+
+		width: 16rem;
+		height: 2px;
+
+		background-color: var(--clr-brand-aquamarine);
+	}
+}
+
+// W w

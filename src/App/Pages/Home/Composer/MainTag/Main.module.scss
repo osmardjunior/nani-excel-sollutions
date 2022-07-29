@@ -103,11 +103,51 @@
 
 		text-align: center;
 
+		font-style: italic;
 		font-weight: 700;
 		font-size: var(--font-size-flued-500);
 
 		> span {
 			color: var(--clr-brand-pumpkin);
 		}
+	}
+}
+
+.teacherSection {
+	display: grid;
+	place-content: center;
+	gap: 3rem;
+
+	margin-block: 3.5rem;
+	padding-block: 3.5rem;
+
+	width: 100%;
+
+	overflow: hidden;
+
+	background-image: url("/assets/background/bg-base.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	&__title {
+		margin-inline: auto;
+
+		width: Min(35ch, 100vw - 2rem);
+
+		text-align: center;
+
+		font-size: 2rem;
+		font-weight: 700;
+		font-style: italic;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3rem;
+
+		justify-content: center;
+		align-items: center;
 	}
 }

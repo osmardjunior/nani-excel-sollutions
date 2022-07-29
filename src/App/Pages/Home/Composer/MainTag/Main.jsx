@@ -1,6 +1,10 @@
+// Components
 import Button from "../../Components/Button/Button";
 import Card from "../../Components/Cards/Card";
 import ClassesComponent from "../../Components/Classes/ClassesComponent";
+import TeacherCard from "../../Components/Teacher/Teacher";
+
+// Styles
 import styles from "./Main.module.scss";
 
 const PhotoSection = () => {
@@ -94,11 +98,33 @@ const ClassesSection = () => {
   );
 };
 
+const TeacherSection = () => {
+  const idLabelledby = "teacher-title";
+
+  return (
+    <section className={styles.teacherSection} aria-labelledby={idLabelledby}>
+      <header className={styles.teacherSection__header}>
+        <h3 className={styles.teacherSection__title} itemID={idLabelledby}>
+          Os especialistas da Excel Solutions que estarão à sua disposição nas
+          aulas gratuitas:
+        </h3>
+      </header>
+
+      <ul className={styles.teacherSection__list}>
+        <TeacherCard />
+        <TeacherCard />
+        <TeacherCard />
+      </ul>
+    </section>
+  );
+};
+
 function Main() {
   return (
     <main className={styles.main}>
       <PhotoSection />
       <ClassesSection />
+      <TeacherSection />
     </main>
   );
 }

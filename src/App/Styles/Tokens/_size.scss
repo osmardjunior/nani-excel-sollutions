@@ -1,6 +1,10 @@
 :root {
 	// Border Radius
 	--rounded-full: 1000vmax;
+	--rounded-md: 0.5rem;
+	--rounded-lg: 1rem;
+	--rounded-xl: 1.5rem;
+	--rounded-xxl: 2rem;
 
 	// Text
 	--size-text-gold: clamp(45ch, 50vw, 75ch);
