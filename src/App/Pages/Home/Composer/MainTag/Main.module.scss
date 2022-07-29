@@ -1,3 +1,5 @@
+@use "../../../../Styles/Abstracts/" as *;
+
 .main {
 	display: grid;
 	justify-items: center;
@@ -105,7 +107,11 @@
 
 		font-style: italic;
 		font-weight: 700;
-		font-size: var(--font-size-flued-500);
+		font-size: var(--font-size-flued-400);
+
+		@include media(sm) {
+			font-size: var(--font-size-flued-500);
+		}
 
 		> span {
 			color: var(--clr-brand-pumpkin);

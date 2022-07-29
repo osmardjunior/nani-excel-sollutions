@@ -7,7 +7,7 @@
 	border-top-left-radius: var(--rounded-xl);
 	border-bottom-right-radius: var(--rounded-xl);
 
-	width: 24rem;
+	width: Min(24rem, 100vw - 2rem);
 
 	user-select: none;
 	overflow: hidden;

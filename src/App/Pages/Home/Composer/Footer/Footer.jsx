@@ -1,3 +1,4 @@
+import Button from "../../Components/Button/Button";
 import styles from "./Footer.module.scss";
 
 const SocialLink = ({ url, imgUlr, alt }) => {
@@ -19,7 +20,7 @@ const Footer = () => {
           alt="Logo da plataforma"
         />
         <img
-          src="/public/assets/footer/excel-solutions.svg"
+          src="/assets/footer/excel-solutions.svg"
           alt="Logo da plataforma"
         />
         <p className={styles.wrapper__text}>
@@ -51,7 +52,7 @@ const Footer = () => {
           <option value="">Cargo</option>
         </select>
 
-        <button className={styles.form__button}></button>
+        <Button title="Garantir minha vaga" classes={styles.form__button} />
       </form>
 
       <div className={styles.social}>

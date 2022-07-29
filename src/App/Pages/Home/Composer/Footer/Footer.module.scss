@@ -2,8 +2,12 @@
 
 .footer {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 1rem;
+	place-content: center;
+	gap: 5rem;
+
+	@include media(lg) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .wrapper {
@@ -11,7 +15,7 @@
 	place-items: center;
 	gap: 2rem;
 
-	padding-block: 7rem;
+	max-width: calc(100% - 8rem);
 
 	user-select: none;
 
@@ -40,21 +44,41 @@
 }
 
 .form {
+	position: relative;
+
 	display: grid;
 	grid-auto-rows: min-content;
-	place-content: center;
-	gap: 1rem;
+	align-content: center;
+	justify-items: center;
+	gap: 2rem;
+
+	margin: auto;
+
+	width: Min(30rem, 100vw - 4rem);
+	aspect-ratio: 1;
+	// height: 30rem;
 
 	border: 2px solid var(--clr-text-100);
 
-	margin: 7rem;
-
 	&__select,
 	&__input {
+		width: calc(100% - 8rem);
+
 		border: 0;
-		padding: 0.875rem 1.25rem;
+		padding-block: 1rem;
+		padding-inline: 1rem 1.5rem;
 
 		background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
+
+		&::placeholder {
+			transform: translateY(1px);
+		}
+	}
+
+	&__button {
+		position: absolute;
+		bottom: 0;
+		transform: translateY(50%);
 	}
 }
 
