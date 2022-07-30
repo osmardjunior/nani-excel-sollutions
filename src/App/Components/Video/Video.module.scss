@@ -1,0 +1,22 @@
+.video {
+	position: relative;
+	width: Min(100vw - 3rem, 50rem);
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+
+		transform: translate(var(--offset_, 1rem), var(--offset_, 1rem));
+
+		border: 3px solid var(--clr-brand-pumpkin);
+		z-index: -1;
+	}
+
+	> img {
+		width: 100%;
+		aspect-ratio: var(--ratio-widescreen);
+		object-fit: cover;
+		object-position: center;
+	}
+}

@@ -1,5 +1,6 @@
 // Components
 import Button from "../../Components/Button/Button";
+import Video from "../../../../Components/Video/Video";
 import Card from "../../Components/Cards/Card";
 import ClassesComponent from "../../Components/Classes/ClassesComponent";
 import TeacherCard from "../../Components/Teacher/Teacher";
@@ -23,9 +24,7 @@ const PhotoSection = () => {
           <span>&nbsp;só 4 dias.</span>
         </h2>
       </header>
-      <div className={styles.photoSection__image}>
-        <img src="https://picsum.photos/1024/768" alt="Video" />
-      </div>
+      <Video />
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
         <Card text={"Estudos de casos reais"} icon="pensil" />

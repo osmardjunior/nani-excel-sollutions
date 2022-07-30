@@ -1,6 +1,5 @@
 import Button from "../../Components/Button/Button";
 import styles from "./Footer.module.scss";
-import { useState } from "react";
 
 const SocialLink = ({ url, imgUlr, alt }) => {
   return (
@@ -54,7 +53,11 @@ const Footer = () => {
           <option value="">Cargo</option>
         </select>
 
-        <Button title="Garantir minha vaga" classes={styles.form__button} />
+        <Button
+          title="Garantir minha vaga"
+          classes={styles.form__button}
+          link="thanks"
+        />
       </form>
 
       <div className={styles.social}>

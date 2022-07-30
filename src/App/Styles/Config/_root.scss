@@ -12,27 +12,22 @@ body {
 	overflow: overlay;
 
 	&::-webkit-scrollbar {
-		width: 0.125rem;
+		width: 0.25rem;
 
 		&-thumb {
 			background-color: var(--clr-brand-aquamarine);
-			background-image: linear-gradient(
-				0deg,
-				var(--clr-surface-100) 0%,
-				var(--clr-brand-aquamarine) 50%,
-				var(--clr-surface-100) 100%
-			);
+			border-radius: 0;
 		}
 
 		&-track {
-			background-color: transparent;
+			background-color: var(--clr-surface-100);
 		}
 	}
 }
 
 .root {
 	display: grid;
-	gap: 7rem;
+	gap: var(--space-between);
 
 	background-color: var(--clr-surface-100);
 	color: var(--clr-text-100);

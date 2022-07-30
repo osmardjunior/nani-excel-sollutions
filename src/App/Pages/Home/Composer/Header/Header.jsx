@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import Button from "../../Components/Button/Button";
-import Label from "../../Components/Label/Label";
+import Label from "../../../../Components/Label/Label";
 
 function ListItems({ info }) {
   return <li className={styles.list__item}>{info}</li>;
@@ -29,11 +29,12 @@ function Header() {
           <ListItems info={"Fórmulas básicas para facilitar a sua vida"} />
           <ListItems info={"E Muito Mais!"} />
         </ul>
-        <a href="#form"><Button
-          title="Garanta sua vaga"
-          classes={styles.button}
-          theme={false}
-        /> 
+        <a href="#form">
+          <Button
+            title="Garanta sua vaga"
+            classes={styles.button}
+            theme={false}
+          />
         </a>
       </section>
     </header>

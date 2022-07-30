@@ -1,4 +1,4 @@
-import Label from "../Label/Label";
+import Label from "../../../../Components/Label/Label";
 import styles from "./ClassesComponent.module.scss";
 
 const Card = ({

@@ -19,8 +19,8 @@
 }
 
 .container {
-	$padding: 7rem;
-	$half-padding: calc(3.5rem + 1vw);
+	$padding: var(--space-between);
+	$half-padding: calc(var(--space-gap) + 1vw);
 
 	display: grid;
 	grid-auto-rows: min-content;
