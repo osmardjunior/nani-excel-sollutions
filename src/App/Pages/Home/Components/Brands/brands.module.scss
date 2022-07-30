@@ -1,0 +1,24 @@
+.BrandsSquare {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15rem;
+
+   
+
+}
+
+.Title {
+    margin-inline: auto;
+
+    width: Min(35ch, 100vw - 2rem);
+
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+

@@ -8,6 +8,7 @@ import brands from "../../Components/Brands/Brands";
 
 // Styles
 import styles from "./Main.module.scss";
+import Brands from "../../Components/Brands/Brands";
 
 const PhotoSection = () => {
   const idLabelledby = "description-title";
@@ -127,16 +128,22 @@ const BrandSection = () => {
   const idLabelledby = "brand-logos";
 
   return (
-    <section
-      className={style.brandSection}
-      aria-labelledby={idLabelledby}
-    >
-      <header className={style.brandSection_header}>
-      <h3 className={styles.brandSection_item} itemID={idLabelledby}>
-        Quem já aprendeu Excel com a Excel Solutions?
-      </h3>
-      </header>
+    <section className="brands-logos">
+      <div className={styles.container}>
+        <h2 className={styles.section-title}>
+              Quem já aprendeu Excel com a Excel Solutions?
+        </h2>
+      <div className={styles.divContainer}>
+    <div className={styles.logoHolder}>
+      <img className={styles.imgFluid}
+      src="/assets/footer/excel-solutions.svg" alt="logo"/>
+
+
+    </div>
+      </div>
+    </div>
     </section>
+      
   );
 };
 
@@ -146,7 +153,7 @@ function Main() {
       <PhotoSection />
       <ClassesSection />
       <TeacherSection />
-      {/* <BrandSection /> não estou conseguindo abrir o brandsection no localhost */}
+      <Brands />
     </main>
   );
 }

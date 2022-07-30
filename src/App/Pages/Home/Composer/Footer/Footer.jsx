@@ -2,59 +2,6 @@ import Button from "../../Components/Button/Button";
 import styles from "./Footer.module.scss";
 import { useState } from "react"
 
-const [user, setUser] = useState({
-  name:'',
-  email:'',
-  telefone:'',
- 
-})
-const [status, setStatus] = useState({
-  type:'',
-  mensagem:'',
-})
-const valueInput = e => setUser({...user,[e.target.name]: e.target,value});
-
-const cadastro = e => {
-
-  e.preventDefault();
-
-  if(!validate()) return; 
-
-  const saveDataForm = true;
-  if(saveDataForm) {
-    setStatus({
-      type: 'sucesso',
-      mensagem: 'Usuário cadastrado com sucesso! :D'
-    })
-    setUser({
-      name:'',
-      email:'',
-      telefone:''
-    })
-  } else {
-    setStatus({
-      type: 'erro',
-      mensagem: 'Erro: Usuário cadastrado sem sucesso! D:'
-    })
-  }
-}
-
-function validate() {
-  if(!user.name) return setStatus({type: 'erro',mensagem: 'Preencha o campo nome'});
-  if(!user.email) return setStatus({type: 'erro',mensagem: 'Preencha o campo Email'});
-  if(!user.telefone) return setStatus({type: 'erro',mensagem: 'Preencha o campo telefone'});
-
-}
-
-
-
-
-
-
-
-
-
-
 
 const SocialLink = ({ url, imgUlr, alt }) => {
   return (
@@ -85,20 +32,18 @@ const Footer = () => {
       </div>
 
       <form className={styles.form}>
-        <input className={styles.form__input} type="text" placeholder="Nome" onChange={valueInput} value={user.name}/>
+        <input className={styles.form__input} type="text" placeholder="Nome" />
         <input
           className={styles.form__input}
-          type="text"
+          type="email"
           placeholder="E-mail"
-          onChange={valueInput} value={user.email}
+          
         />
         <input
           className={styles.form__input}
           type="text"
-          minLength={11}
           placeholder="Telefone"
-          onChange={valueInput}
-          value={user.telefone}
+          pattern='^[0-9]{11}$'
         />
         <select
           className={styles.form__select}
