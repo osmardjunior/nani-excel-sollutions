@@ -3,12 +3,10 @@ import Button from "../../Components/Button/Button";
 import Card from "../../Components/Cards/Card";
 import ClassesComponent from "../../Components/Classes/ClassesComponent";
 import TeacherCard from "../../Components/Teacher/Teacher";
-import brands from "../../Components/Brands/Brands";
-
+import Brands from "../../Components/Brands/Brands";
 
 // Styles
 import styles from "./Main.module.scss";
-import Brands from "../../Components/Brands/Brands";
 
 const PhotoSection = () => {
   const idLabelledby = "description-title";
@@ -25,20 +23,22 @@ const PhotoSection = () => {
           <span>&nbsp;só 4 dias.</span>
         </h2>
       </header>
-
       <div className={styles.photoSection__image}>
         <img src="https://picsum.photos/1024/768" alt="Video" />
       </div>
-
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
         <Card text={"Estudos de casos reais"} icon="pensil" />
         <Card text={"Instrutores que atuam no mercado"} icon="person" />
         <Card text={"Pensamento analítico e Excel"} icon="grath" />
       </ul>
-
-      <a href="#form"><Button title="Garanta sua vaga" classes={styles.photoSection__button} />
-  </a>  </section>
+      <a href="#form">
+        <Button
+          title="Garanta sua vaga"
+          classes={styles.photoSection__button}
+        />
+      </a>{" "}
+    </section>
   );
 };
 
@@ -67,7 +67,8 @@ const ClassesSection = () => {
         eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
         eveniet."
       />
-      <ClassesComponent className={` blur-blobs--right`}
+      <ClassesComponent
+        className={` blur-blobs--right`}
         idLabelledbyCard="class-2"
         title="AULA 2"
         dateDay="10/08"
@@ -114,9 +115,10 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
-        <div className={styles.teacher}><TeacherCard /></div>
+        <div className={styles.teacher}>
+          <TeacherCard />
+        </div>
 
-        
         <TeacherCard />
         <TeacherCard />
       </ul>
@@ -128,22 +130,23 @@ const BrandSection = () => {
   const idLabelledby = "brand-logos";
 
   return (
-    <section className="brands-logos">
-      <div className={styles.container}>
-        <h2 className={styles.section-title}>
-              Quem já aprendeu Excel com a Excel Solutions?
-        </h2>
-      <div className={styles.divContainer}>
-    <div className={styles.logoHolder}>
-      <img className={styles.imgFluid}
-      src="/assets/footer/excel-solutions.svg" alt="logo"/>
+    <section className={styles.brandSection} aria-labelledby={idLabelledby}>
+      <header>
+        <h3 className={styles.brandSection__title} itemID={idLabelledby}>
+          Quem já aprendeu Excel com a Excel Solutions?
+        </h3>
+      </header>
 
-
-    </div>
-      </div>
-    </div>
+      <nav className={styles.brandSection__brands}>
+        <Brands imgUlr="furukawa" />
+        <Brands imgUlr="mondelez" />
+        <Brands imgUlr="o-boticario" />
+        <Brands imgUlr="parana-banco" />
+        <Brands imgUlr="pucpr" />
+        <Brands imgUlr="renault" />
+        <Brands imgUlr="rumo" />
+      </nav>
     </section>
-      
   );
 };
 
@@ -153,7 +156,7 @@ function Main() {
       <PhotoSection />
       <ClassesSection />
       <TeacherSection />
-      <Brands />
+      <BrandSection />
     </main>
   );
 }

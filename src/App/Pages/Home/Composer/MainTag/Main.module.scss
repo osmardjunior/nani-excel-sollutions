@@ -1,13 +1,12 @@
 @use "../../../../Styles/Abstracts/" as *;
 
 .main {
+	--title-size: 2rem;
+
 	display: grid;
 	justify-items: center;
 
 	isolation: isolate;
-
-	//! this is just a placeholder take it out on production
-	margin-bottom: 30vmax;
 }
 
 .photoSection {
@@ -30,7 +29,7 @@
 		text-align: center;
 
 		font-style: italic;
-		font-size: 2rem;
+		font-size: var(--title-size);
 		font-weight: 700;
 
 		> span {
@@ -134,7 +133,7 @@
 	background-image: url("/assets/background/bg-base.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 
 	&__title {
 		margin-inline: auto;
@@ -143,7 +142,7 @@
 
 		text-align: center;
 
-		font-size: 2rem;
+		font-size: var(--title-size);
 		font-weight: 700;
 		font-style: italic;
 	}
@@ -152,17 +151,30 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 3rem;
-		transition: transform .5s;
+		transition: transform 0.5s;
 		justify-content: center;
 		align-items: center;
+	}
+}
 
-	// 	&:hover,
-	//     &:focus,
-	//     &:focus-within,
-	//     &:focus-visible {
-	// 	transform: scale(1.5);
-	// }
+.brandSection {
+	display: grid;
+	place-items: center;
+	gap: 3.5rem;
 
+	padding-block: 7rem;
+
+	&__title {
+		font-style: italic;
+		font-weight: 700;
+		font-size: var(--title-size);
 	}
 
+	&__brands {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 3rem 1rem;
+	}
 }

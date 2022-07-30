@@ -1,24 +1,12 @@
-.BrandsSquare {
+.brands {
+	display: grid;
+	place-content: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15rem;
+	border-top-left-radius: var(--rounded-xl);
+	border-bottom-right-radius: var(--rounded-xl);
 
-   
+	width: 20rem;
+	height: 4rem;
 
+	background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
 }
-
-.Title {
-    margin-inline: auto;
-
-    width: Min(35ch, 100vw - 2rem);
-
-    text-align: center;
-
-    font-size: 2rem;
-    font-weight: 700;
-    font-style: italic;
-}
-

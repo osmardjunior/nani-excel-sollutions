@@ -13,7 +13,12 @@
 	overflow: hidden;
 	isolation: isolate;
 
+	will-change: transform;
+	transition: transform 200ms ease-out;
+
 	&:hover {
+		transform: scale3d(1.05, 1.05, 1);
+
 		&::before {
 			transform: translateY(2rem);
 		}
@@ -23,9 +28,12 @@
 		content: "";
 
 		position: absolute;
-		inset: 0;
+		inset: -1px;
 
 		transition: transform 200ms ease-out;
+
+		border-top-left-radius: inherit;
+		border-bottom-right-radius: inherit;
 
 		background-image: linear-gradient(
 			180deg,
@@ -43,7 +51,7 @@
 	&__img {
 		width: 100%;
 
-		// aspect-ratio: var(--ratio-portrait);
+		aspect-ratio: var(--ratio-portrait);
 	}
 
 	&__info {

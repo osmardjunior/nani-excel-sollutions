@@ -14,11 +14,7 @@ const Card = () => {
         Professor da Excel Solutions
       </p>
     </li>
-
-
   );
 };
-
-
 
 export default Card;
