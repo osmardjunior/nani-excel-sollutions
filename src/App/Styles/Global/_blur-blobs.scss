@@ -1,16 +1,17 @@
 [class*="blur-blobs"] {
 	position: relative;
+	overflow: hidden;
 
 	&::before {
 		content: "";
 		position: absolute;
-		inset-block: 0;
+		inset-block: var(--inset-block, 0);
 
 		margin-block: auto;
 
 		border-radius: 100%;
 
-		filter: blur(12rem);
+		filter: blur(10rem);
 		opacity: 0.4;
 
 		height: 40rem;
@@ -29,5 +30,10 @@
 	&--left::before {
 		left: 0;
 		--translateX: -50%;
+	}
+
+	&--bottom-right::before {
+		--inset-block: 100% 0;
+		right: 0;
 	}
 }

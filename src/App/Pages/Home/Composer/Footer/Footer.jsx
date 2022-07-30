@@ -1,7 +1,6 @@
 import Button from "../../Components/Button/Button";
 import styles from "./Footer.module.scss";
-import { useState } from "react"
-
+import { useState } from "react";
 
 const SocialLink = ({ url, imgUlr, alt }) => {
   return (
@@ -15,7 +14,7 @@ const SocialLink = ({ url, imgUlr, alt }) => {
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} blur-blobs--bottom-right`}>
       <div className={styles.wrapper} id="form">
         <img
           src="/assets/footer/excel-na-pratica.svg"
@@ -37,13 +36,12 @@ const Footer = () => {
           className={styles.form__input}
           type="email"
           placeholder="E-mail"
-          
         />
         <input
           className={styles.form__input}
           type="text"
           placeholder="Telefone"
-          pattern='^[0-9]{11}$'
+          pattern="^[0-9]{11}$"
         />
         <select
           className={styles.form__select}
