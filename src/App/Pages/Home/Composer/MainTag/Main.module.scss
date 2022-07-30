@@ -152,8 +152,16 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 3rem;
-
+		transition: transform .5s;
 		justify-content: center;
 		align-items: center;
+
+	// 	&:hover,
+	//     &:focus,
+	//     &:focus-within,
+	//     &:focus-visible {
+	// 	transform: scale(1.5);
+	// }
+
 	}
 }

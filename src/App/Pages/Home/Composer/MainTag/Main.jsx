@@ -3,6 +3,8 @@ import Button from "../../Components/Button/Button";
 import Card from "../../Components/Cards/Card";
 import ClassesComponent from "../../Components/Classes/ClassesComponent";
 import TeacherCard from "../../Components/Teacher/Teacher";
+import brands from "../../Components/Brands/Brands";
+
 
 // Styles
 import styles from "./Main.module.scss";
@@ -34,8 +36,8 @@ const PhotoSection = () => {
         <Card text={"Pensamento analítico e Excel"} icon="grath" />
       </ul>
 
-      <Button title="Garanta sua vaga" classes={styles.photoSection__button} />
-    </section>
+      <a href="#form"><Button title="Garanta sua vaga" classes={styles.photoSection__button} />
+  </a>  </section>
   );
 };
 
@@ -64,7 +66,7 @@ const ClassesSection = () => {
         eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
         eveniet."
       />
-      <ClassesComponent
+      <ClassesComponent className={` blur-blobs--right`}
         idLabelledbyCard="class-2"
         title="AULA 2"
         dateDay="10/08"
@@ -111,10 +113,29 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
-        <TeacherCard />
+        <div className={styles.teacher}><TeacherCard /></div>
+
+        
         <TeacherCard />
         <TeacherCard />
       </ul>
+    </section>
+  );
+};
+
+const BrandSection = () => {
+  const idLabelledby = "brand-logos";
+
+  return (
+    <section
+      className={style.brandSection}
+      aria-labelledby={idLabelledby}
+    >
+      <header className={style.brandSection_header}>
+      <h3 className={styles.brandSection_item} itemID={idLabelledby}>
+        Quem já aprendeu Excel com a Excel Solutions?
+      </h3>
+      </header>
     </section>
   );
 };
@@ -125,6 +146,7 @@ function Main() {
       <PhotoSection />
       <ClassesSection />
       <TeacherSection />
+      {/* <BrandSection /> não estou conseguindo abrir o brandsection no localhost */}
     </main>
   );
 }
