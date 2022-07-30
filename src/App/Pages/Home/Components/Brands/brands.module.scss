@@ -8,5 +8,16 @@
 	width: 20rem;
 	height: 4rem;
 
-	background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
+	background-color: hsl(var(--clr-brand-aquamarine-hsl) / var(--alpha_, 0.125));
+
+	will-change: transform, background-color;
+	transition-property: transform, background-color;
+	transition: 200ms ease-out;
+
+	&:focus,
+	&:focus-within,
+	&:hover {
+		--alpha_: 0.25;
+		transform: scale3d(1.05, 1.05, 1);
+	}
 }

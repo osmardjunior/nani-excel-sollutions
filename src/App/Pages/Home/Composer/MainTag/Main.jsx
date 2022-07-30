@@ -115,10 +115,7 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
-        <div className={styles.teacher}>
-          <TeacherCard />
-        </div>
-
+        <TeacherCard />
         <TeacherCard />
         <TeacherCard />
       </ul>

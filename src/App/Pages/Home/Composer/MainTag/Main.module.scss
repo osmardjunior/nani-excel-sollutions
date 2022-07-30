@@ -95,12 +95,10 @@
 
 	margin-top: 7rem;
 
-	&__header {
-		margin-bottom: 5rem;
-	}
-
 	&__title {
 		display: grid;
+
+		margin-bottom: 5rem;
 
 		text-align: center;
 
@@ -165,6 +163,10 @@
 	padding-block: 7rem;
 
 	&__title {
+		width: Min(25ch, 100vw - 2rem);
+
+		text-align: center;
+
 		font-style: italic;
 		font-weight: 700;
 		font-size: var(--title-size);

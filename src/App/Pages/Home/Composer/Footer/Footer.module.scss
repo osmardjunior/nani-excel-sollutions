@@ -75,6 +75,13 @@
 		}
 	}
 
+	&__select {
+		option {
+			color: currentColor;
+			background: var(--clr-surface-100);
+		}
+	}
+
 	&__button {
 		position: absolute;
 		bottom: 0;
