@@ -25,7 +25,7 @@
 		grid-row: 3/3;
 
 		width: 5rem;
-		height: 4px;
+		height: var(--size-line);
 
 		background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
 	}
@@ -88,35 +88,3 @@
 		transform: translateY(50%);
 	}
 }
-
-.social {
-	grid-column: 1/-1;
-
-	display: grid;
-	place-items: center;
-	gap: 1rem;
-
-	padding-block: 2rem;
-
-	user-select: none;
-
-	&__links {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-	}
-
-	&::before {
-		content: "";
-
-		grid-row: 2/2;
-
-		width: 16rem;
-		height: 2px;
-
-		background-color: var(--clr-brand-aquamarine);
-	}
-}
-
-// W w

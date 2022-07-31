@@ -10,16 +10,6 @@
 		gap: inherit;
 	}
 
-	// &:first-of-type {
-	// 	.label {
-	// 		color: var(--clr-surface-100);
-
-	// 		> div:first-child:after {
-	// 			--label-bg: var(--clr-brand-aquamarine);
-	// 		}
-	// 	}
-	// }
-
 	&:last-child {
 		.label {
 			--label-text: var(--clr-brand-pumpkin);

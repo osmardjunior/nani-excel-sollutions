@@ -1,6 +1,5 @@
 [class*="blur-blobs"] {
 	position: relative;
-	overflow: hidden;
 
 	&::before {
 		content: "";
@@ -16,7 +15,8 @@
 
 		height: 40rem;
 		width: 20rem;
-		transform: translateX(var(--translateX, 50%));
+		transform: translateX(var(--translateX, 50%))
+			translateY(var(--translateY, 0));
 
 		background-color: var(--clr-brand-aquamarine);
 	}
@@ -35,5 +35,13 @@
 	&--bottom-right::before {
 		--inset-block: 100% 0;
 		right: 0;
+	}
+
+	&--top-right::before {
+		--inset-block: auto 100%;
+		--translateY: -75%;
+		right: 0;
+
+		height: 20rem;
 	}
 }

@@ -1,0 +1,12 @@
+.main {
+	display: grid;
+	gap: var(--space-gap);
+}
+
+.title {
+	margin: auto;
+
+	font-style: italic;
+	font-weight: 700;
+	font-size: var(--font-size-flued-500);
+}

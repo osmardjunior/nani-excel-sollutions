@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 
 function Header() {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} blur-blobs--top-right`}>
       <img
         className={styles.image}
         src="/assets/footer/excel-na-pratica.svg"

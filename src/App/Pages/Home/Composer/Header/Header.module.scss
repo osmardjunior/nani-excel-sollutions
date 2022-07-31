@@ -68,7 +68,7 @@
 			content: "";
 			display: inline-block;
 
-			width: 4px;
+			width: var(--size-line);
 			aspect-ratio: 1/1;
 
 			margin-bottom: calc(1ex - 5px);

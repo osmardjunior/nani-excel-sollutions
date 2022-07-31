@@ -9,7 +9,7 @@
 		content: "";
 		grid-row: 3/3;
 
-		height: 4px;
+		height: var(--size-line);
 		width: 4rem;
 
 		margin-block: 1.75rem;
@@ -52,7 +52,7 @@
 		border-bottom-left-radius: var(--rounded-full);
 		border-bottom-right-radius: var(--rounded-full);
 
-		width: 4px;
+		width: var(--size-line);
 		height: 16rem;
 
 		background-color: currentColor;
@@ -75,7 +75,7 @@
 			display: inline-block;
 
 			width: 1rem;
-			height: 4px;
+			height: var(--size-line);
 
 			border-radius: var(--rounded-full);
 
