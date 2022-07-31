@@ -12,13 +12,19 @@
 		background-color: var(--clr-brand-aquamarine);
 	}
 
-	&:not(&:first-child, &:last-child) {
+	&:not(&:first-of-type, &:last-child) {
 		--clr-before_: var(--clr-brand-aquamarine);
 
 		.video::after {
 			content: "";
 		}
 	}
+
+	// &: {
+	// 	.video::after {
+	// 		content: none;
+	// 	}
+	// }
 
 	&:last-child {
 		--clr-before_: var(--clr-text-100);
