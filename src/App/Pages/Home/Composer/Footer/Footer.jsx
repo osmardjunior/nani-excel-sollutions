@@ -9,8 +9,8 @@ import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} blur-blobs--bottom-right`}>
-      <div className={styles.wrapper} id="form">
+    <footer className={`${styles.footer} blur-blobs--bottom-right`} id="FORM">
+      <div className={styles.wrapper}>
         <img
           src="/assets/footer/excel-na-pratica.svg"
           alt="Logo da plataforma"
@@ -25,7 +25,14 @@ const Footer = () => {
         </p>
       </div>
 
-      <form className={styles.form}>
+
+
+
+
+
+
+
+      <form className={styles.form} >
         <input className={styles.form__input} type="text" placeholder="Nome" />
         <input
           className={styles.form__input}
@@ -53,6 +60,7 @@ const Footer = () => {
           title="Garantir minha vaga"
           classes={styles.form__button}
           link="thanks"
+          
         />
       </form>
 

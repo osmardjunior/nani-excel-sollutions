@@ -31,7 +31,7 @@ const PhotoSection = () => {
         <Card text={"Instrutores que atuam no mercado"} icon="person" />
         <Card text={"Pensamento analítico e Excel"} icon="grath" />
       </ul>
-      <a href="#form">
+      <a href="#FORM">
         <Button
           title="Garanta sua vaga"
           classes={styles.photoSection__button}

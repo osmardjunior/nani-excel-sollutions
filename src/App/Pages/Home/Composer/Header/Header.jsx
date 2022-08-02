@@ -29,7 +29,7 @@ function Header() {
           <ListItems info={"Fórmulas básicas para facilitar a sua vida"} />
           <ListItems info={"E Muito Mais!"} />
         </ul>
-        <a href="#form" className={styles.link}>
+        <a href="#FORM" className={styles.link}>
           <Button
             title="Garanta sua vaga"
             classes={styles.button}
