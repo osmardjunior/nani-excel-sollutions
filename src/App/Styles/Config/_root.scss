@@ -9,7 +9,6 @@ body {
 	scrollbar-color: var(--clr-brand-aquamarine);
 
 	overflow: auto;
-	overflow: overlay;
 
 	&::-webkit-scrollbar {
 		width: 0.25rem;
@@ -38,7 +37,7 @@ body {
 	isolation: isolate;
 	zoom: 80%;
 
-	overflow-x: hidden;
+	overflow: hidden;
 
 	@include media(sm) {
 		zoom: 100%;

@@ -1,7 +1,7 @@
 import styles from "./brands.module.scss";
 
 const Brands = ({ url, imgUlr }) => {
-  const checkUrl = url == undefined ;
+  const checkUrl = url == undefined ? "#" : url;
 
   return (
     <a className={styles.brands} href={checkUrl} target="_blank">
@@ -10,4 +10,3 @@ const Brands = ({ url, imgUlr }) => {
   );
 };
 export default Brands;
- 
