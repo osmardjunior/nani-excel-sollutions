@@ -1,15 +1,16 @@
 .button {
 	padding: 0.75rem 1.75rem;
 	background-color: var(--clr-brand-pumpkin);
-
+	margin-right: 14rem;
+	margin-top: 3rem;
 	width: fit-content;
 	height: fit-content;
 
 	color: var(--clr-surface-100);
 
 	font-weight: 700;
-	font-size: 1.125rem;
-
+	font-size: x-large;
+	font-style: italic;
 	--clip-size: 0.75rem;
 
 	clip-path: polygon(

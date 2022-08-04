@@ -8,13 +8,13 @@
 
 	background-image: url("/assets/background/bg-widescreen.png");
 	background-repeat: no-repeat;
-	background-position: left;
+	background-position: 17;
 	background-size: cover;
 
 	user-select: none;
 
 	@include media(lg) {
-		grid-template-columns: 7fr 8fr;
+		grid-template-columns: 10fr 13fr;
 	}
 }
 
@@ -114,7 +114,7 @@
 }
 
 .label {
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 .link {

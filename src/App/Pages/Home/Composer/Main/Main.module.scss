@@ -78,9 +78,12 @@
 		width: Min(100%, 100vw - 4rem);
 	}
 
-	&__list,
+	
 	&__button {
 		margin-top: var(--offset_);
+		font-size: xx-large;
+		margin-left: 5rem;
+		margin-right: 7rem;
 	}
 }
 
@@ -134,7 +137,7 @@
 	&__title {
 		margin-inline: auto;
 
-		width: Min(35ch, 100vw - 2rem);
+		width: Min(23ch, 100vw - 2rem);
 
 		text-align: center;
 
@@ -150,7 +153,20 @@
 		transition: transform 0.5s;
 		justify-content: center;
 		align-items: center;
+
 	}
+
+
+
+
+
+
+
+	
+
+
+
+
 }
 
 .brandSection {

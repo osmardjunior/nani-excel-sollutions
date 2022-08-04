@@ -11,13 +11,13 @@ function Header() {
     <header className={styles.header}>
       <section className={styles.container}>
         <Label
-          title="DE 9 A 12 DE AGOSTO"
+          title="DE 23 A 26 DE AGOSTO"
           classes={styles.label}
           theme={false}
         />
 
         <h1 className={styles.title}>
-          3 aulas + 1 masterclass Grátis para você sair do zero
+        3 SUPER-AULAS GRATUITAS + 1 MASTERCLASS PARA VOCÊ SAIR DO ZERO    
         </h1>
 
         <ul className={styles.list}>
@@ -29,6 +29,8 @@ function Header() {
           <ListItems info={"Fórmulas básicas para facilitar a sua vida"} />
           <ListItems info={"E Muito Mais!"} />
         </ul>
+        <br></br>
+        <h3>Seja o primeiro a se inscrever!</h3>
         <Button
           title="Garanta sua vaga"
           classes={styles.button}

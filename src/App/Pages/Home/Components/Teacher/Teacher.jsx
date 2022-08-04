@@ -4,16 +4,51 @@ const Card = () => {
   return (
     <li className={styles.card}>
       <img
-        className={styles.card__img}
-        src="https://picsum.photos/300/500"
+        className={styles.card__Joelson}
+        src="../assets/teachers/Joelson.svg"
         alt="Foto Do Professor"
       />
 
-      <p className={styles.card__info}>
-        <strong>Daniel dos santos </strong>
-        Professor da Excel Solutions
-      </p>
+<li>
+  <img
+        className={styles.card__Paola}
+        src="../assets/teachers/Paola.svg"
+        alt="Foto Do Professor"
+      />
+</li>
+      
+
+      <img
+        className={styles.card__Lucas}
+        src="../assets/teachers/Lucas.svg"
+        alt="Foto Do Professor"
+      />
+
+
+      <img
+        className={styles.card__Adriana}
+        src="../assets/teachers/Adriana.svg"
+        alt="Foto Do Professor"
+      />
+
+
+      <img
+        className={styles.card__Altamir}
+        src="../assets/teachers/Altamir.svg"
+        alt="Foto Do Professor"
+      />
+
+
+
+
+
+
+
+
     </li>
+
+
+
   );
 };
 

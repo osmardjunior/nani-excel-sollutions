@@ -20,20 +20,17 @@ const Footer = () => {
           alt="Logo da plataforma"
         />
         <p className={styles.wrapper__text}>
-          4 AULAS GRATUITAS DE EXCEL NA PRÁTICA COM OS INSTRUTORES MAIS
+        <span>4 AULAS GRATUITAS</span> DE EXCEL NA PRÁTICA COM OS INSTRUTORES MAIS
           PREPARADOS DO MERCADO!
         </p>
       </div>
 
 
 
-
-
-
-
-
       <form className={styles.form} >
-        <input className={styles.form__input} type="text" placeholder="Nome" />
+        <input className={styles.form__input} 
+        type="text" 
+        placeholder="Nome" />
         <input
           className={styles.form__input}
           type="email"
@@ -45,20 +42,11 @@ const Footer = () => {
           placeholder="Telefone"
           pattern="^[0-9]{11}$"
         />
-        <select
-          className={styles.form__select}
-          name="cargos"
-          placeholder="Cargo"
-        >
-          <option value="">Cargo</option>
-          <option value="">Cargo</option>
-          <option value="">Cargo</option>
-          <option value="">Cargo</option>
-        </select>
 
         <Button
           title="Garantir minha vaga"
           classes={styles.form__button}
+          type="submit"
           link="thanks"
           
         />

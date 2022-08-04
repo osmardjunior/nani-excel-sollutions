@@ -19,17 +19,21 @@ const PhotoSection = () => {
     >
       <header>
         <h2 className={styles.photoSection__title} itemID={idLabelledby}>
-          Com a metodologia Excel Solutions, é possível a prender o básico do
+          Com a metodologia Excel Solutions, é possível aprender o básico do
           Excel na prática em
           <span>&nbsp;só 4 dias.</span>
         </h2>
+        {/* adicionar video da paola aqui pesquisar no 3schools */}
       </header>
       <Video />
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
         <Card text={"Estudos de casos reais"} icon="pensil" />
         <Card text={"Instrutores que atuam no mercado"} icon="person" />
-        <Card text={"Pensamento analítico e Excel"} icon="grath" />
+        <Card
+          text={" A única que combina pensamento analítico e Excel"}
+          icon="grath"
+        />
       </ul>
       <Button
         title="Garanta sua vaga"
@@ -51,50 +55,60 @@ const ClassesSection = () => {
       <header className={styles.classSection__header}>
         <h3 className={styles.classesSection__title} itemID={idLabelledby}>
           O que você vai aprender na
-          <span>&nbsp;Semana Excel na Prática</span>
+          <span>&nbsp;Semana do Excel na Prática?</span>
         </h3>
       </header>
 
       <ClassesComponent
         idLabelledbyCard="class-1"
-        title="AULA 1"
-        dateDay="09/08"
-        dateString="Terça-feira"
-        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
-        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
-        eveniet."
+        title="SUPERAULA 1"
+        dateDay="23/08"
+        dateString="Segunda-Feira"
+        description=" Matemática básica (soma; subtração; divisão; multiplicação e porcentagem)
+        Formatação de planilha
+        Colar Especial
+        Preenchimento relâmpago
+        Inserir e Formatar objetos
+        Gráfico padrão
+        Lógica e Função SE."
       />
       <ClassesComponent
         className={` blur-blobs--right`}
         idLabelledbyCard="class-2"
         title="AULA 2"
-        dateDay="10/08"
-        dateString="Quarta-feira"
-        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
-        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
-        eveniet."
+        dateDay="24/08"
+        dateString="Terça-feira"
+        description="Formatação Condicional
+        Condicionais matemáticas com um e mais critérios
+        Tratamento e Validação de Dados
+        Aninhamento de funções condicionais
+        Gráficos Combinados
+        PROCV / PROCH."
       />
       <ClassesComponent
         idLabelledbyCard="class-3"
         title="AULA 3"
-        dateDay="11/08"
-        dateString="Quinta-feira"
-        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
-        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
-        eveniet."
+        dateDay="25/08"
+        dateString="Quarta-feira"
+        description="PROCX
+        Tabela Dinâmica
+        Como solucionar problemas de Fórmulas
+        Trabalhando com funções de Tempo e Texto
+        Gestão de Dados
+        Gráficos Dinâmicos."
       />
       <ClassesComponent
         idLabelledbyCard="class-4"
         title="MASTERCLASS"
-        dateDay="12/08"
+        dateDay="26/08"
         dateString="Sexta-feira"
-        description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-        nostrum incidunt mollitia nemo, dolorum sequi reprehenderit quis, fugit
-        eos perferendis itaque fuga ducimus id iste at aliquid. Nobis, corrupti
-        eveniet."
+        description="Variações do PROCV,
+        
+        Solver,
+        Macro com Edição,
+        Funções de Banco de Dados;
+        Suplementos Power do Excel
+        Dashboard."
       />
     </section>
   );
@@ -107,16 +121,17 @@ const TeacherSection = () => {
     <section className={styles.teacherSection} aria-labelledby={idLabelledby}>
       <header className={styles.teacherSection__header}>
         <h3 className={styles.teacherSection__title} itemID={idLabelledby}>
-          Os especialistas da Excel Solutions que estarão à sua disposição nas
+          Os especialistas Excel Solutions que estarão à sua disposição nas
           aulas gratuitas:
         </h3>
       </header>
 
       <ul className={styles.teacherSection__list}>
-        <TeacherCard />
-        <TeacherCard />
-        <TeacherCard />
+       
+          <TeacherCard />
+           
       </ul>
+      
     </section>
   );
 };
