@@ -127,9 +127,27 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
-       
-          <TeacherCard />
-           
+       <li>          
+        <TeacherCard />
+      </li>
+      <li>          
+        <TeacherCard />
+      </li>
+      <li>          
+        <TeacherCard />
+      </li>
+      <li>          
+        <TeacherCard />
+      </li>
+      <li>          
+        <TeacherCard />
+      </li>
+         
+
+
+
+
+
       </ul>
       
     </section>

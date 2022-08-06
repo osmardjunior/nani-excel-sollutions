@@ -44,13 +44,13 @@ const Footer = () => {
         />
 
         <Button
+          classes={styles.form__button2}
           title="Garantir minha vaga"
-          classes={styles.form__button}
           type="submit"
           link="thanks"
           
         />
-      </form>
+      </form> 
 
       <Social />
     </footer>

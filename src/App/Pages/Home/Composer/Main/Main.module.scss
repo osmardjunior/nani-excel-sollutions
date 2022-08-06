@@ -68,16 +68,15 @@
 
 	&__list {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 5rem;
+				gap: 5rem;
 
 		margin-inline: auto;
 
 		width: Min(100%, 100vw - 4rem);
 	}
-
+	&__Adriana {
+		
+	}
 	
 	&__button {
 		margin-top: var(--offset_);
