@@ -1,33 +1,14 @@
 import styles from "./Teacher.module.scss";
 
-const Card = ({ulrImg}) => {
+const Card = ({ imgUlr }) => {
   return (
-   <ul className={styles.card}>
-    <li >
+    <li>
       <img
         className={styles.card__Joelson}
-        src={ulrImg}
-        alt="Foto Do Professor"
+        src={`/assets/teachers/${imgUlr}.svg`}
+        alt={`Teacher ${imgUlr}`}
       />
     </li>
-
-    
-
-   </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   );
 };
 
