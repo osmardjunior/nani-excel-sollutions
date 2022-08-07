@@ -128,7 +128,7 @@ const TeacherSection = () => {
 
       <ul className={styles.teacherSection__list}>
        <li>          
-        <TeacherCard />
+        <TeacherCard ulrImg={""} />
       </li>
       <li>          
         <TeacherCard />
