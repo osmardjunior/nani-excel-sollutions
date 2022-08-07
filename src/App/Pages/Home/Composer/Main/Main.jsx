@@ -127,11 +127,11 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
-          <TeacherCard imgUlr={"Adriana"} />
-          <TeacherCard imgUlr={"Altamir"} />
-          <TeacherCard imgUlr={"Joelson"} />
-          <TeacherCard imgUlr={"Lucas"} />
-          <TeacherCard imgUlr={"Paola"} />
+        <TeacherCard imgUlr={"Adriana"} name={"Andriana"} />
+        <TeacherCard imgUlr={"Altamir"} />
+        <TeacherCard imgUlr={"Joelson"} />
+        <TeacherCard imgUlr={"Lucas"} />
+        <TeacherCard imgUlr={"Paola"} />
       </ul>
     </section>
   );
