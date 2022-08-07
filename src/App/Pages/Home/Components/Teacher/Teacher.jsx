@@ -1,12 +1,12 @@
 import styles from "./Teacher.module.scss";
 
-const Card = () => {
+const Card = ({ulrImg}) => {
   return (
    <ul className={styles.card}>
     <li >
       <img
         className={styles.card__Joelson}
-        src="../assets/teachers/Joelson.svg"
+        src={ulrImg}
         alt="Foto Do Professor"
       />
     </li>
