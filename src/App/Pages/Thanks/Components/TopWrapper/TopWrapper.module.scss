@@ -1,0 +1,82 @@
+.section {
+	--gap_: 2.5rem;
+
+	display: grid;
+	place-items: center;
+	gap: var(--gap_);
+
+	&::after {
+		content: "";
+		width: var(--size-line);
+		height: 12rem;
+		background-color: var(--clr-brand-aquamarine);
+	}
+
+	&:not(&:first-of-type, &:last-child) {
+		--clr-before_: var(--clr-brand-aquamarine);
+
+		.video::after {
+			content: "";
+		}
+	}
+
+	// &: {
+	// 	.video::after {
+	// 		content: none;
+	// 	}
+	// }
+
+	&:last-child {
+		--clr-before_: var(--clr-text-100);
+
+		.label {
+			--label-text: var(--clr-brand-pumpkin);
+		}
+
+		&::after {
+			content: none;
+		}
+	}
+}
+
+.label {
+	--label-text: var(--clr-brand-aquamarine);
+	--label-padding-x: 3.5rem;
+	--label-font-size: 1.625rem;
+	text-transform: uppercase;
+}
+
+.date {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+
+	text-align: center;
+
+	&::before {
+		content: "";
+		grid-column: 2/2;
+
+		height: 2ex;
+		width: 2px;
+		background-color: currentColor;
+	}
+
+	&__bold {
+		font-weight: 600;
+	}
+}
+
+.video {
+	&::after {
+		position: absolute;
+		inset: 0;
+		transform: translate(var(--offset_, 1rem), var(--offset_, 1rem));
+		z-index: -1;
+		background-image: linear-gradient(
+			180deg,
+			transparent 0%,
+			var(--clr-surface-100) 75%
+		);
+	}
+}

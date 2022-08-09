@@ -1,0 +1,88 @@
+.card {
+	--aspect-local_: 10/11;
+	position: relative;
+
+	display: grid;
+	place-items: center;
+
+	border: 2px solid var(--clr-text-100);
+
+	width: 15rem;
+	aspect-ratio: var(--aspect-local_);
+
+	color: var(--clr-brand-aquamarine);
+	background-color: var(--clr-surface-100);
+
+	transition-property: background-color, color;
+	transition: 200ms ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		background-color: var(--clr-text-100);
+		color: var(--clr-surface-100);
+
+		.icon {
+			--translateY_: -0.5rem;
+		}
+	}
+
+	&::before {
+		--invert-offset_: calc(var(--offset_) * -1);
+
+		content: "";
+		position: absolute;
+		inset: 0;
+
+		transform: translate(var(--invert-offset_), var(--offset_));
+		border: 3px solid var(--clr-text-100);
+
+		z-index: -1;
+	}
+}
+
+.icon {
+	$bottom-space: 1rem;
+	$padding: 0.875rem;
+
+	position: absolute;
+	top: 0;
+
+	display: grid;
+	place-items: center;
+
+	padding-top: $padding;
+	padding-inline: $padding;
+	padding-bottom: $padding + $bottom-space * 0.75;
+
+	transform: translateY(
+		calc(-50% + #{$bottom-space} / 2 + var(--translateY_, 0rem))
+	);
+
+	background-color: var(--clr-brand-aquamarine);
+
+	clip-path: polygon(
+		100% 0,
+		100% calc(100% - $bottom-space),
+		50% 100%,
+		0 calc(100% - $bottom-space),
+		0 0
+	);
+
+	will-change: transform;
+	transition: transform 200ms ease-out;
+
+	> img {
+		width: 1.875rem;
+		height: auto;
+	}
+}
+
+.text {
+	width: calc(100% - 4rem);
+
+	text-align: center;
+
+	font-size: 1.75rem;
+	font-weight: 700;
+}

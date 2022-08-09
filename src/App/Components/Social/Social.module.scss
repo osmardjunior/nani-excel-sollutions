@@ -1,0 +1,31 @@
+.social {
+	grid-column: 1/-1;
+
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+
+	padding-block: 2rem;
+	margin: 10%;
+	user-select: none;
+
+	&__links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	&::before {
+		content: "";
+
+		grid-row: 2/2;
+
+		width: 16rem;
+		height: 2px;
+
+		background-color: var(--clr-brand-aquamarine);
+	}
+}
+
+// W w

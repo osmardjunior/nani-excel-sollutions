@@ -1,0 +1,130 @@
+@use "../../../../Styles/Abstracts/" as *;
+
+.footer {
+	display: grid;
+	place-content: center;
+	gap: 5rem;
+
+	@include media(lg) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+}
+
+.wrapper {
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+
+	max-width: calc(100% - 8rem);
+
+	user-select: none;
+	margin-left: 15%;
+	&::before {
+		content: "";
+
+		grid-row: 3/3;
+
+		width: 5rem;
+		height: var(--size-line);
+
+		background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
+	}
+
+	&__text {
+		width: Min(29ch, 100vw - 2rem);
+
+		color: white;
+
+		text-align: center;
+
+		font-style: italic;
+		font-size: 1.3rem;
+		font-weight: 700;
+		margin-left: 0%;
+		> span {
+			display: inline-grid;
+			grid-template-rows: 1fr auto;
+			color: var(--clr-brand-pumpkin);
+		}
+	}
+	 
+}
+
+.form {
+	position: relative;
+
+	display: grid;
+	grid-auto-rows: min-content;
+	align-content: center;
+	justify-items: center;
+
+	gap: var(--font-size-flued-400);
+
+	margin: auto;
+	margin-right: 25%;
+	width: Min(30rem, 100vw - 4rem);
+	aspect-ratio: 1;
+
+	border: 2px solid var(--clr-text-100);
+
+	&__select,
+	&__input {
+		width: calc(100% - 8rem);
+
+		border: 0;
+		padding-block: 1rem;
+		padding-inline: 1rem 1.5rem;
+
+		background-color: hsl(var(--clr-brand-aquamarine-hsl) / 0.125);
+
+		&::placeholder {
+			transform: translateY(1px);
+		}
+	}
+
+	&__select {
+		option {
+			color: currentColor;
+			background: var(--clr-surface-100);
+		}
+	}
+
+	&__button {
+		padding: 0.75rem 1.5rem;
+	background-color: var(--clr-brand-pumpkin);
+	transform: translateY(125%);
+	
+	width: fit-content;
+	height: fit-content;
+
+	color: var(--clr-surface-100);
+
+	font-weight: 900;
+	font-size: x-large;
+	font-style: italic;
+	--clip-size: 0.75rem;
+
+	clip-path: polygon(
+		var(--clip-size) 0%,
+		100% 0,
+		calc(100% - var(--clip-size)) 100%,
+		0% 100%
+	);
+
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-within,
+	&:focus-visible {
+		background-color: var(--clr-brand-aquamarine);
+	}
+}
+		
+	}
+
+	
+

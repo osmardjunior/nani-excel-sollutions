@@ -1,0 +1,163 @@
+@use "../../../../Styles/Abstracts/" as *;
+
+.header {
+	display: grid;
+
+	width: 100%;
+	// height: Max(100vmin, 100vh - 2rem);
+
+	background-image: url("/assets/background/bg-widescreen.png");
+	background-repeat: no-repeat;
+	background-position: 1;
+	background-position-x: center;
+
+	user-select: none;
+
+	@include media(lg) {
+		grid-template-columns: 10fr 13fr;
+	}
+}
+
+.container {
+	$padding: var(--space-between);
+	$half-padding: calc(var(--space-gap) + 1vw);
+
+	display: grid;
+	grid-auto-rows: min-content;
+	place-items: center;
+	gap: 1rem;
+
+	padding-block: $padding;
+	padding-inline: $half-padding;
+
+	width: Min(100%, 100vw - 2rem);
+
+	@include media(lg) {
+		place-items: unset;
+		place-content: center;
+		padding-inline: $half-padding 0;
+	}
+	
+.button {
+	padding: 0.9rem 4rem;
+	background-color: var(--clr-brand-pumpkin);
+	margin-right: 9rem;
+	margin-top: 2rem;
+	width: fit-content;
+	height: fit-content;
+
+	color: var(--clr-surface-100);
+
+	font-weight: 900;
+	font-size: large;
+	font-style: italic;
+	--clip-size: 1.30rem;
+
+	clip-path: polygon(
+		var(--clip-size) 0%,
+		100% 0,
+		calc(100% - var(--clip-size)) 100%,
+		0% 100%
+	);
+
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-within,
+	&:focus-visible {
+		background-color: var(--clr-brand-aquamarine);
+	}
+}
+
+}
+
+.title {
+	color: var(--clr-brand-aquamarine);
+
+	text-transform: uppercase;
+	text-align: var(--align_, center);
+
+	font-style: italic;
+	font-size: 2.1rem;
+	font-weight: 700;
+
+	@include media(sm) {
+		--align_: start;
+	}
+}
+
+.list {
+	display: grid;
+	gap: 0.9rem;
+	font-size: 1.125rem;
+
+	justify-items: center;
+
+	&__item {
+		text-align: center;
+
+		&::before {
+			content: "";
+			display: inline-block;
+
+			width: var(--size-line);
+			aspect-ratio: 1/1;
+
+			margin-bottom: calc(1ex - 5px);
+			margin-right: 0.25rem;
+
+			background-color: var(--clr-text-100);
+
+			border-radius: var(--rounded-full);
+		}
+
+		&:last-child {
+			position: relative;
+
+			width: fit-content;
+
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.025em;
+
+			&::before {
+				content: none;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: calc(100% + 2px);
+				inset-inline: 0;
+
+				height: 2px;
+				background-color: var(--clr-text-100);
+			}
+		}
+	}
+
+	@include media(sm) {
+		justify-items: start;
+
+		&__item {
+			width: auto;
+		}
+	}
+}
+
+.label {
+	margin-bottom: 2rem;
+}
+
+.link {
+	margin-top: 5rem;
+	
+}
+
+.link {
+	width: fit-content;
+	height: fit-content;
+}

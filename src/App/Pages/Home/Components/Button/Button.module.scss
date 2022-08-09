@@ -1,0 +1,33 @@
+.button {
+	padding: 0.75rem 4.50rem;
+	background-color: var(--clr-brand-pumpkin);
+	// margin-right: 9rem;
+	// margin-top: 2rem;
+	width: fit-content;
+	height: fit-content;
+
+	color: var(--clr-surface-100);
+
+	font-weight: 900;
+	font-size: large;
+	font-style: italic;
+	--clip-size: 0.75rem;
+
+	clip-path: polygon(
+		var(--clip-size) 0%,
+		100% 0,
+		calc(100% - var(--clip-size)) 100%,
+		0% 100%
+	);
+
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-within,
+	&:focus-visible {
+		background-color: var(--clr-brand-aquamarine);
+	}
+}

@@ -1,0 +1,225 @@
+@use "../../../../Styles/Abstracts/" as *;
+
+.main {
+  --title-size: 2rem;
+
+  display: grid;
+  justify-items: center;
+
+  isolation: isolate;
+}
+
+.photoSection {
+  --offset_: 1rem;
+
+  position: relative;
+
+  display: grid;
+  place-items: center;
+  gap: 7rem;
+
+  overflow: hidden;
+  width: 100%;
+
+ 
+
+  &__title {
+    margin-inline: auto;
+
+    width: Min(29ch, 100vw - 2rem);
+
+    text-align: center;
+
+    font-style: italic;
+    font-size: var(--title-size);
+    font-weight: 700;
+
+    > span {
+      display: inline-grid;
+      grid-template-rows: 1fr auto;
+      color: var(--clr-brand-pumpkin);
+
+      &::after {
+        content: "";
+        height: 3px;
+        background-color: currentColor;
+      }
+    }
+  }
+
+
+
+
+
+  &__image {
+    position: relative;
+    width: Min(100vw - 3rem, 50rem);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      transform: translate(var(--offset_), var(--offset_));
+
+      border: 3px solid var(--clr-brand-pumpkin);
+      z-index: -1;
+    }
+
+    > img {
+      width: 100%;
+      aspect-ratio: var(--ratio-widescreen);
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    margin-inline: auto;
+
+    width: Min(100%, 100vw - 4rem);
+  }
+
+  
+  &__button {
+    padding: 0.75rem 4.50rem;
+    background-color: var(--clr-brand-pumpkin);
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: fit-content;
+    height: fit-content;
+  
+    color: var(--clr-surface-100);
+  
+    font-weight: 900;
+    font-size: large;
+    font-style: italic;
+    --clip-size: 0.75rem;
+  
+    clip-path: polygon(
+      var(--clip-size) 0%,
+      100% 0,
+      calc(100% - var(--clip-size)) 100%,
+      0% 100%
+    );
+  
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+  
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+      background-color: var(--clr-brand-aquamarine);
+    }
+  }
+}
+
+.classesSection {
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+
+  width: 100%;
+
+  margin-top: 7rem;
+
+  &__header {
+    margin-bottom: 5rem;
+    margin-inline: auto;
+width: min(23ch,100vw - 2rem);
+text-align: center;
+font-size: var(--title-size);
+font-weight: 700;
+font-style: italic;
+  }
+
+  &__title {
+    display: grid;
+
+    text-align: center;
+
+    font-style: italic;
+    font-weight: 700;
+    font-size: var(--font-size-flued-400);
+
+    @include media(sm) {
+      font-size: var(--font-size-flued-500);
+    }
+
+    > span {
+      color: var(--clr-brand-pumpkin);
+    }
+  }
+}
+
+.teacherSection {
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+
+  margin-block: 3.5rem;
+  padding-block: 3.5rem;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background-image: url("/assets/background/bg-base.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin-inline: auto;
+
+    width: Min(23ch, 100vw - 2rem);
+
+    text-align: center;
+
+    font-size: var(--title-size);
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 3rem;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.brandSection {
+  display: grid;
+  place-items: center;
+  gap: 3.5rem;
+
+  padding-block: 7rem;
+
+  &__title {
+    font-style: italic;
+    font-weight: 700;
+    font-size: var(--title-size);
+    width: min(23ch,100vw - 2rem);
+    text-align: center;
+
+  }
+
+  &__brands {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem 1rem;
+  }
+}

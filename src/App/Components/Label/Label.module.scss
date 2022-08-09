@@ -1,0 +1,82 @@
+$label-bg: var(--label-bg, var(--clr-surface-100));
+$label-text: var(--label-text, var(--clr-text-100));
+
+.label {
+	position: relative;
+
+	padding-block: var(--label-padding-y, 0.75rem);
+	padding-inline: var(--label-padding-x, 1.75rem);
+
+	width: fit-content;
+	height: fit-content;
+
+	color: $label-text;
+
+	font-weight: 700;
+	font-size: var(--label-font-size, 1.125rem);
+	font-style: italic;
+
+	isolation: isolate;
+	user-select: none;
+
+	transition-property: color, background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:focus-within,
+	&:focus-visible {
+		color: $label-bg;
+
+		.borderOne::after {
+			background-color: $label-text;
+		}
+	}
+}
+
+.borderOne,
+.borderTwo {
+	transition: inherit;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+
+		--clip-size: 0.75rem;
+
+		clip-path: polygon(
+			var(--clip-size) 0%,
+			100% 0,
+			calc(100% - var(--clip-size)) 100%,
+			0% 100%
+		);
+
+		z-index: -1;
+
+		transition: inherit;
+	}
+
+	&::before {
+		inset: 0px;
+
+		background-color: $label-text;
+	}
+
+	&::after {
+		--clip-size: 10px;
+		inset-inline: 5px;
+		inset-block: 4px;
+		background-color: $label-bg;
+	}
+}
+
+.borderTwo {
+	&::before,
+	&::after {
+		$offset: 0.75rem;
+
+		transform: translate($offset, $offset);
+		z-index: -2;
+	}
+}
