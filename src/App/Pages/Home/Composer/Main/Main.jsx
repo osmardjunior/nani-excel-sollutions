@@ -39,7 +39,11 @@ const PhotoSection = () => {
         title="Garanta sua vaga"
         classes={styles.photoSection__button}
         link="#FORM"
+<<<<<<< HEAD
       /> 
+=======
+      />
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
     </section>
   );
 };
@@ -127,11 +131,19 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
+<<<<<<< HEAD
          <TeacherCard imgUlr={"Lucas"} name={"Lucas"} desciption={"Instrutor na Excel Solutions Brasil"} longDescription={"Formado em Administração pela PUC-PR e Especialista em Análise de Dados. Atualmente é instrutor na Excel Solutions Brasil e Engenheiro de Software na SAE Digital S.A"}/>
          <TeacherCard imgUlr={"Adriana"} name={"Adriana"} desciption={"Instrutora na Excel Solutions Brasil"} longDescription={"Formada em Contabilidade pela USP, com MBA e Mestrado na FAE e FGV, respectivamente.Atualmente é instrutora na Excel Solutions Brasil e Business Consultant na Go On Consulting."}/>
          <TeacherCard imgUlr={"Altamir"} name={"Altamir"} desciption={"Instrutor na Excel Solutions Brasil"} longDescription={"Formado em Engenharia Civil pela UFPR e mestrando na mesma instituição. Atualmente é Engenheiro de Projetos Estruturais na EGEL Engenharia Ltda."}/>
          <TeacherCard imgUlr={"Joelson"} name={"Joelson"} desciption={"CEO da Excel Solutions Brasil"} longDescription={"Formado em Ciência da Computação pela UTP. É fundador e CEO da Excel Solutions Brasil, além de criador do método de ensino revolucionário da empresa."}/>
          <TeacherCard imgUlr={"Paola"} name={"Paola"} desciption={"Gerente Comercial na Excel Solutions Brasil"} longDescription={"Formada em Administração de Empresas pela PUC-PR. Atualmente é Gerente Comercial na Excel Solutions Brasil, onde está há mais de 4 anos."}/> 
+=======
+        <TeacherCard imgUlr={"Adriana"} name={"Andriana"} />
+        <TeacherCard imgUlr={"Altamir"} />
+        <TeacherCard imgUlr={"Joelson"} />
+        <TeacherCard imgUlr={"Lucas"} />
+        <TeacherCard imgUlr={"Paola"} />
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
       </ul>
     </section>
   );

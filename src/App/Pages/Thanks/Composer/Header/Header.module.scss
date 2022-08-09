@@ -32,6 +32,7 @@
 
 .info {
 	width: Min(35ch, 100vw - 2rem);
+<<<<<<< HEAD
 	
 	text-align: center;
 
@@ -40,6 +41,12 @@
 		color: white;
 		font-size: large;
 	}
+=======
+
+	text-align: center;
+
+	font-size: var(--font-size-flued-200);
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 }
 
 .arrow {

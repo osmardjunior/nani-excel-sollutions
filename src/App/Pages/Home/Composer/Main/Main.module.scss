@@ -21,12 +21,19 @@
   overflow: hidden;
   width: 100%;
 
+<<<<<<< HEAD
  
 
   &__title {
     margin-inline: auto;
 
     width: Min(29ch, 100vw - 2rem);
+=======
+  &__title {
+    margin-inline: auto;
+
+    width: Min(30ch, 100vw - 2rem);
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 
     text-align: center;
 
@@ -47,10 +54,13 @@
     }
   }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
   &__image {
     position: relative;
     width: Min(100vw - 3rem, 50rem);
@@ -86,6 +96,7 @@
     width: Min(100%, 100vw - 4rem);
   }
 
+<<<<<<< HEAD
   
   &__button {
     padding: 0.75rem 4.50rem;
@@ -119,6 +130,11 @@
     &:focus-visible {
       background-color: var(--clr-brand-aquamarine);
     }
+=======
+  &__list,
+  &__button {
+    margin-top: var(--offset_);
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
   }
 }
 
@@ -133,12 +149,15 @@
 
   &__header {
     margin-bottom: 5rem;
+<<<<<<< HEAD
     margin-inline: auto;
 width: min(23ch,100vw - 2rem);
 text-align: center;
 font-size: var(--title-size);
 font-weight: 700;
 font-style: italic;
+=======
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
   }
 
   &__title {
@@ -180,7 +199,11 @@ font-style: italic;
   &__title {
     margin-inline: auto;
 
+<<<<<<< HEAD
     width: Min(23ch, 100vw - 2rem);
+=======
+    width: Min(35ch, 100vw - 2rem);
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 
     text-align: center;
 
@@ -191,7 +214,11 @@ font-style: italic;
 
   &__list {
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap-reverse;
+=======
+    flex-wrap: wrap;
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
     gap: 3rem;
     transition: transform 0.5s;
     justify-content: center;
@@ -210,9 +237,12 @@ font-style: italic;
     font-style: italic;
     font-weight: 700;
     font-size: var(--title-size);
+<<<<<<< HEAD
     width: min(23ch,100vw - 2rem);
     text-align: center;
 
+=======
+>>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
   }
 
   &__brands {
