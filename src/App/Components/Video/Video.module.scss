@@ -1,7 +1,6 @@
 .video {
 	position: relative;
-	width: Min(55rem - 3rem, 50rem);
-	width: 40rem;
+	width: Min(100vw - 3rem, 50rem);
 	margin-bottom: var(--offset_, 1rem);
 
 	&::before {
@@ -15,8 +14,10 @@
 		z-index: -1;
 	}
 
-	> img {
-		width: 100%;
+	> img,
+	> div {
+		width: inherit !important;
+		height: auto !important;
 		aspect-ratio: var(--ratio-widescreen);
 		object-fit: cover;
 		object-position: center;
