@@ -8,7 +8,6 @@
 	@include media(lg) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	
 }
 
 .wrapper {
@@ -19,11 +18,7 @@
 	max-width: calc(100% - 8rem);
 
 	user-select: none;
-// <<<<<<< HEAD
-	margin-left: 15%;
-// =======
 
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 	&::before {
 		content: "";
 
@@ -36,32 +31,22 @@
 	}
 
 	&__text {
-// <<<<<<< HEAD
 		width: Min(29ch, 100vw - 2rem);
-// =======
-// 		width: Min(35ch, 100vw - 2rem);
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 
 		color: white;
 
 		text-align: center;
 
 		font-style: italic;
-// <<<<<<< HEAD
 		font-size: 1.3rem;
 		font-weight: 700;
 		margin-left: 0%;
-// =======
-// 		font-size: 1.25rem;
-// 		font-weight: 700;
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 		> span {
 			display: inline-grid;
 			grid-template-rows: 1fr auto;
 			color: var(--clr-brand-pumpkin);
 		}
 	}
-	 
 }
 
 .form {
@@ -75,11 +60,7 @@
 	gap: var(--font-size-flued-400);
 
 	margin: auto;
-// <<<<<<< HEAD
-	margin-right: 25%;
-// =======
 
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 	width: Min(30rem, 100vw - 4rem);
 	aspect-ratio: 1;
 
@@ -107,50 +88,32 @@
 		}
 	}
 
-// <<<<<<< HEAD
 	&__button {
 		padding: 0.75rem 1.5rem;
-	background-color: var(--clr-brand-pumpkin);
-	transform: translateY(125%);
-	
-	width: fit-content;
-	height: fit-content;
+		background-color: var(--clr-brand-pumpkin);
+		transform: translateY(125%);
 
-	color: var(--clr-surface-100);
+		width: fit-content;
+		height: fit-content;
 
-	font-weight: 900;
-	font-size: x-large;
-	font-style: italic;
-	--clip-size: 0.75rem;
+		color: var(--clr-surface-100);
 
-	clip-path: polygon(
-		var(--clip-size) 0%,
-		100% 0,
-		calc(100% - var(--clip-size)) 100%,
-		0% 100%
-	);
+		font-weight: 900;
+		font-size: x-large;
+		font-style: italic;
+		--clip-size: 0.75rem;
 
-	transition-property: color, background-color;
-	transition-duration: 200ms;
-	transition-timing-function: ease-out;
+		clip-path: polygon(var(--clip-size) 0%, 100% 0, calc(100% - var(--clip-size)) 100%, 0% 100%);
 
-	&:hover,
-	&:focus,
-	&:focus-within,
-	&:focus-visible {
-		background-color: var(--clr-brand-aquamarine);
+		transition-property: color, background-color;
+		transition-duration: 200ms;
+		transition-timing-function: ease-out;
+
+		&:hover,
+		&:focus,
+		&:focus-within,
+		&:focus-visible {
+			background-color: var(--clr-brand-aquamarine);
+		}
 	}
 }
-// =======
-// 	&__button2 {
-	
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
-		
-	}
-
-	
-// <<<<<<< HEAD
-
-// =======
-// }
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d

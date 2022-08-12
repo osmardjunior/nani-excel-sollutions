@@ -5,14 +5,19 @@ import Label from "../../../../Components/Label/Label";
 function ListItems({ info }) {
   return <li className={styles.list__item}>{info}</li>;
 }
-// <<<<<<< HEAD
- 
-// =======
-
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 function Header() {
   return (
     <header className={styles.header}>
+      <img
+        className={styles.bg}
+        src="/assets/background/bg-widescreen.png"
+        alt="Big background Img"
+      />
+      <img
+        className={styles.bg}
+        src="/assets/background/mini-header-bg.jpg"
+        alt="Big background Img"
+      />
       <section className={styles.container}>
         <Label
           title="DE 23 A 26 DE AGOSTO"
@@ -21,7 +26,7 @@ function Header() {
         />
 
         <h1 className={styles.title}>
-        3 SUPER-AULAS GRATUITAS + 1 MASTERCLASS PARA VOCÊ SAIR DO ZERO    
+          3 SUPER-AULAS GRATUITAS + 1 MASTERCLASS PARA VOCÊ SAIR DO ZERO
         </h1>
 
         <ul className={styles.list}>
