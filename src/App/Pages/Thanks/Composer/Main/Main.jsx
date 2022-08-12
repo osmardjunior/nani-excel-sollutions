@@ -13,8 +13,9 @@ const Main = () => {
         dateDay="09/08"
         dateString="Terça-feira"
         blobSide={true}
+        isVideo={true}
+        url="https://vimeo.com/738749613"
       />
-    <div>
 
    
       <TopWrapper
@@ -22,16 +23,16 @@ const Main = () => {
         dateDay="10/08"
         dateString="Terça-feira"
         blobSide={false}
+        isVideo={false}
+        url="/assets/video/aguarde/aguarde_blur.svg"
       />
       <TopWrapper
         title="Aula 3"
         dateDay="11/08"
         dateString="Terça-feira"
         blobSide={true}
-        src="aguarde blur.svg"
       /> 
       
-      </div>
       <TopWrapper
         title="MasterClass"
         dateDay="12/08"

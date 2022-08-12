@@ -3,7 +3,7 @@ import styles from "./TopWrapper.module.scss";
 import Label from "../../../../Components/Label/Label";
 import Video from "../../../../Components/Video/Video";
 
-const TopWrapper = ({ title, dateDay, dateString, blobSide, videoClasses }) => {
+const TopWrapper = ({ title, dateDay, dateString, blobSide, videoClasses , isVideo, url}) => {
   const camelToSnakeCase = (str) =>
     str.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`);
   const idItemCard = camelToSnakeCase(title);
@@ -20,14 +20,14 @@ const TopWrapper = ({ title, dateDay, dateString, blobSide, videoClasses }) => {
       <header>
         <Label classes={styles.label} title={title} itemID={idLabelledbyCard} />
       </header>
- 
+
       <p className={styles.date}>
         <b className={styles.date__bold}>{dateDay}</b>
         {dateString}
       </p>
 
       <footer>
-        <Video classes={styles.video} />
+        <Video classes={styles.video} isVideo={isVideo} url={url}/>
       </footer>
     </section>
   );

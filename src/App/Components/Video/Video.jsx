@@ -1,19 +1,22 @@
 import styles from "./Video.module.scss";
 import ReactPlayer from "react-player";
 
-const Video = ({ classes }) => {
+const Componente = ({ isVideo, url }) => {
+  if (isVideo) {
+    return <ReactPlayer url={url} />;
+  } else {
+    return <img src={url} alt="classImage" />;
+  }
+};
+const Video = ({ classes, isVideo, url }) => {
   return (
     <div className={`${styles.video} ${classes}`}>
-       
+      <Componente isVideo={isVideo} url={url} />
 
-       {/* <iframe width="100%" height="550" src="https://www.youtube.com/embed/jEXCPkKxvFk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> */}
+      {/* <ReactPlayer
+        // url="https://vimeo.com/738749613"
 
-       <ReactPlayer
-        url="https://vimeo.com/738749613"
-      />
-
-       {/* <iframe width="100%" height="550" src="https://vimeo.com/738749613" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> */}
-
+      /> */}
     </div>
   );
 };
