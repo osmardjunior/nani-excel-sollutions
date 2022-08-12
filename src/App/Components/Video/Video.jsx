@@ -14,7 +14,7 @@ const Video = ({ classes, isVideo, url }) => {
       <Componente isVideo={isVideo} url={url} />
 
       {/* <ReactPlayer
-        // url="https://vimeo.com/738749613"
+        url="https://vimeo.com/738749613"
 
       /> */}
     </div>

@@ -5,6 +5,7 @@ import Card from "../../Components/Cards/Card";
 import ClassesComponent from "../../Components/Classes/ClassesComponent";
 import TeacherCard from "../../Components/Teacher/Teacher";
 import Brands from "../../Components/Brands/Brands";
+import TopWrapper from "../../../Thanks/Components/TopWrapper/TopWrapper";
 
 // Styles
 import styles from "./Main.module.scss";
@@ -23,9 +24,15 @@ const PhotoSection = () => {
           Excel na prática em
           <span>&nbsp;só 4 dias.</span>
         </h2>
-        {/* adicionar video da paola aqui pesquisar no 3schools */}
+
+
+        
       </header>
-      <Video />
+      <Video 
+              isVideo={true}
+              url="https://vimeo.com/738749613"
+      
+      />
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
         <Card text={"Estudos de casos reais"} icon="pensil" />
@@ -39,11 +46,8 @@ const PhotoSection = () => {
         title="Garanta sua vaga"
         classes={styles.photoSection__button}
         link="#FORM"
-// <<<<<<< HEAD
       /> 
-{/* =======
-      />
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d */}
+
     </section>
   );
 };

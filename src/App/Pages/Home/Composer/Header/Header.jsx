@@ -7,7 +7,7 @@ function ListItems({ info }) {
 }
 function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header}> 
       <img
         className={styles.bg}
         src="/assets/background/bg-widescreen.png"

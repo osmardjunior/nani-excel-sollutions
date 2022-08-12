@@ -24,13 +24,15 @@ const Main = () => {
         dateString="Terça-feira"
         blobSide={false}
         isVideo={false}
-        url="/assets/video/aguarde/aguarde_blur.svg"
+        url="/assets/video/aguarde/verde.jpg"
       />
       <TopWrapper
         title="Aula 3"
         dateDay="11/08"
         dateString="Terça-feira"
         blobSide={true}
+        isVideo={false}
+        url="/assets/video/aguarde/verde.jpg"
       /> 
       
       <TopWrapper
@@ -38,6 +40,8 @@ const Main = () => {
         dateDay="12/08"
         dateString="Terça-feira"
         blobSide={false}
+        isVideo={false}
+        url="/assets/video/maisesperada/laranja.jpg"
       />
     </main>
   );
