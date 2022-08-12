@@ -1,9 +1,9 @@
 import styles from "./Social.module.scss";
-<<<<<<< HEAD
+// <<<<<<< HEAD
  
-=======
+// =======
 
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 const SocialLink = ({ url, imgUlr, alt }) => {
   return (
     <a href={url}>
@@ -23,31 +23,31 @@ function Social() {
 
       <nav className={styles.social__links}>
         <SocialLink
-<<<<<<< HEAD
+// <<<<<<< HEAD
           url="https://www.facebook.com/escolaexcelsolutions"
-=======
-          url="#"
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+//           url="#"
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
           imgUlr="/assets/footer/facebook.svg"
           alt="facebook"
         />
 
         <SocialLink
-<<<<<<< HEAD
+// <<<<<<< HEAD
           url="https://www.instagram.com/excelsolutionsbrasil/"
-=======
-          url="#"
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+//           url="#"
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
           imgUlr="/assets/footer/instagram.svg"
           alt="instagram"
         />
 
         <SocialLink
-<<<<<<< HEAD
+// <<<<<<< HEAD
           url="https://www.linkedin.com/company/excelsolutionsbrasil/"
-=======
-          url="#"
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+//           url="#"
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
           imgUlr="/assets/footer/linkdin.svg"
           alt="linkedin"
         />

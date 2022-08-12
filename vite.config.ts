@@ -16,11 +16,8 @@ export default defineConfig(({ mode }) => {
     ],
     server: {
       host: "0.0.0.0",
-<<<<<<< HEAD
       port: 5000,
-=======
-      port: 3000,
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+
     },
     define: {
       __APP_ENV__: env.APP_ENV,

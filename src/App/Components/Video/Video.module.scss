@@ -1,6 +1,7 @@
 .video {
 	position: relative;
-	width: Min(100vw - 3rem, 50rem);
+	// width: Min(55rem - 3rem, 50rem);
+	width: 40rem;
 	margin-bottom: var(--offset_, 1rem);
 
 	&::before {

@@ -5,11 +5,11 @@ import Label from "../../../../Components/Label/Label";
 function ListItems({ info }) {
   return <li className={styles.list__item}>{info}</li>;
 }
-<<<<<<< HEAD
+// <<<<<<< HEAD
  
-=======
+// =======
 
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 function Header() {
   return (
     <header className={styles.header}>

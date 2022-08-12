@@ -20,7 +20,7 @@ const TopWrapper = ({ title, dateDay, dateString, blobSide, videoClasses }) => {
       <header>
         <Label classes={styles.label} title={title} itemID={idLabelledbyCard} />
       </header>
-
+ 
       <p className={styles.date}>
         <b className={styles.date__bold}>{dateDay}</b>
         {dateString}

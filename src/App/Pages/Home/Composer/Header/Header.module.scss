@@ -8,13 +8,13 @@
 
 	background-image: url("/assets/background/bg-widescreen.png");
 	background-repeat: no-repeat;
-<<<<<<< HEAD
+// <<<<<<< HEAD
 	background-position: 1;
 	background-position-x: center;
-=======
-	background-position: 17;
-	background-size: cover;
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+// 	background-position: 17;
+// 	background-size: cover;
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 
 	user-select: none;
 
@@ -42,7 +42,7 @@
 		place-content: center;
 		padding-inline: $half-padding 0;
 	}
-<<<<<<< HEAD
+// <<<<<<< HEAD
 	
 .button {
 	padding: 0.9rem 4rem;
@@ -78,8 +78,8 @@
 	}
 }
 
-=======
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 }
 
 .title {
@@ -89,11 +89,11 @@
 	text-align: var(--align_, center);
 
 	font-style: italic;
-<<<<<<< HEAD
+// <<<<<<< HEAD
 	font-size: 2.1rem;
-=======
-	font-size: 2.25rem;
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+// 	font-size: 2.25rem;
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 	font-weight: 700;
 
 	@include media(sm) {
@@ -103,11 +103,11 @@
 
 .list {
 	display: grid;
-<<<<<<< HEAD
+// <<<<<<< HEAD
 	gap: 0.9rem;
-=======
-	gap: 0.5rem;
->>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+// =======
+// 	gap: 0.5rem;
+// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 	font-size: 1.125rem;
 
 	justify-items: center;
