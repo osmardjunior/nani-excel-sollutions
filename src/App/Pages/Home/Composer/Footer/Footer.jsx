@@ -6,6 +6,8 @@ import Social from "../../../../Components/Social/Social";
 // >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 import styles from "./Footer.module.scss";
 import ButtonForm from "../../Components/Button/ButtonForm";
+import { maskPhone } from "../../../../utils/masks";
+import { useState } from "react";
 
 
 
@@ -16,6 +18,7 @@ import ButtonForm from "../../Components/Button/ButtonForm";
 // >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 
 const Footer = () => {
+  const [phone, setPhone] = useState("");
   return (
     <footer className={`${styles.footer} blur-blobs--bottom-right`} id="FORM">
       <div className={styles.wrapper}>
@@ -52,7 +55,8 @@ const Footer = () => {
           className={styles.form__input}
           type="text"
           placeholder="Telefone"
-          pattern="^[0-9]{11}$"
+          value={phone}
+          onInput={(e) => setPhone(maskPhone(e.currentTarget.value))}
         />
 {/* <<<<<<< HEAD */}
         <input
