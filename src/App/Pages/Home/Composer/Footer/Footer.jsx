@@ -57,7 +57,7 @@ const Footer = () => {
           
         />
 
-        <Button
+        <button
           classes={styles.form__button}
           title="Garantir minha vaga"
           type="submit"
