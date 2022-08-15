@@ -5,6 +5,7 @@ import Social from "../../../../Components/Social/Social";
 
 // >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 import styles from "./Footer.module.scss";
+import ButtonForm from "../../Components/Button/ButtonForm";
 
 
 
@@ -36,14 +37,18 @@ const Footer = () => {
 
       <form className={styles.form} >
         <input className={styles.form__input} 
-        type="text" 
-        placeholder="Nome" />
+          required
+          type="text" 
+          placeholder="Nome"
+        />
         <input
+          required
           className={styles.form__input}
           type="email"
           placeholder="E-mail"
         />
         <input
+          required
           className={styles.form__input}
           type="text"
           placeholder="Telefone"
@@ -51,28 +56,18 @@ const Footer = () => {
         />
 {/* <<<<<<< HEAD */}
         <input
+          required
           className={styles.form__input}
           type="text"
           placeholder="Cargo"
-          
         />
 
-        <Button
+        <ButtonForm
           classes={styles.form__button}
           title="Garantir minha vaga"
           type="submit"
-          link="thanks"
-           
-// =======
-
-//         <Button
-//           classes={styles.form__button2}
-//           title="Garantir minha vaga"
-//           type="submit"
-//           link="thanks"
-          
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
         />
+
       </form> 
 
       <Social />
