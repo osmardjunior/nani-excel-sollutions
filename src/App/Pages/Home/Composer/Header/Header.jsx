@@ -14,7 +14,7 @@ function Header() {
 
 <picture className={styles.bg}>
   <source media="(min-width:720px)" srcSet={ImageLarge}/>
-  <source media="(min-width:319px)" srcSet={ImageSmall}/>
+  <source media="(min-width:0px)" srcSet={ImageSmall}/>
   <img className={styles.mobile} src="mobile4.svg" alt="header"/>
 </picture>
 

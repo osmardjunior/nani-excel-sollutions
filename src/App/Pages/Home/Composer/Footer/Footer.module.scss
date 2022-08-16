@@ -120,4 +120,7 @@
 			bottom: 2rem;
 		}
 	}
+	@media screen and (max-width: 420px) {
+		height: 120%;
+	}
 }
