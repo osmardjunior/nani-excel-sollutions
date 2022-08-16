@@ -7,6 +7,7 @@ const Card = ({
   dateDay,
   dateString,
   description,
+  blurry
 }) => {
   return (
     <section className={styles.section} aria-labelledby={idLabelledbyCard}>
@@ -14,14 +15,14 @@ const Card = ({
         <Label title={title} classes={styles.label} itemID={idLabelledbyCard} />
       </header>
 
-      <p className={styles.date}>
+      <p className={styles.date}> 
         <b className={styles.date__bold}>{dateDay}</b>
         {dateString}
       </p>
 
       <footer>
         <p className={styles.description}>{description}</p>
-
+        <p className={styles.blurry}>{blurry}</p>
         <div className={styles.lineBall} aria-hidden={true}></div>
       </footer>
     </section>

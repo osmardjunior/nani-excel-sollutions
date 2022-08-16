@@ -2,14 +2,8 @@
 
 .header {
 	display: grid;
-
 	width: 100%;
 
-	// background-image: url("/assets/background/bg-widescreen.png");
-	// background-repeat: no-repeat;
-	// background-position: 1;
-	// background-position-x: center;
-	// background-size: cover;
 
 	user-select: none;
 
@@ -21,30 +15,23 @@
 .bg {
 	grid-column: 1/-1;
 	grid-row: 1 / span 1;
-
+			
 	object-fit: cover;
 	width: 100%;
-	// height: 100%;
 
-	&:first-of-type {
-		// display: none;
-		display: block;
-	}
-	&:last-of-type {
-		display: none;
-	}
+	background-size: cover;
 
-	@include media(sm) {
-		// object-position: -20rem;
-		// width: calc(100% - 20rem);
+	
 
-		// &:first-of-type {
-		// 	display: block;
-		// }
-		// &:last-of-type {
-		// 	display: none;
-		// }
-	}
+	@media(sm) {}
+		
+	
+	
+}
+
+.mobile {
+	min-width: 100vw;
+
 }
 
 .container {

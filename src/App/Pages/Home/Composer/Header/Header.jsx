@@ -1,23 +1,25 @@
 import styles from "./Header.module.scss";
 import Button from "../../Components/Button/Button";
 import Label from "../../../../Components/Label/Label";
+import ImageLarge from "../../../../../../public/assets/background/bg-widescreen.png"
+import ImageSmall from "../../../../../../public/assets/background/mobile4.svg"
+import imgLarg from "../../../../../../public/assets/background/mobile4.svg"
 
 function ListItems({ info }) {
   return <li className={styles.list__item}>{info}</li>;
 }
-function Header() {
+function Header() { 
   return (
     <header className={styles.header}> 
-      <img
-        className={styles.bg}
-        src="/assets/background/bg-widescreen.png"
-        alt="Big background Img"
-      />
-      <img
-        className={styles.bg}
-        src="/assets/background/mini-header-bg.jpg"
-        alt="Big background Img"
-      />
+
+<picture className={styles.bg}>
+  <source media="(min-width:720px)" srcSet={ImageLarge}/>
+  <source media="(min-width:319px)" srcSet={ImageSmall}/>
+  <img className={styles.mobile} src="mobile4.svg" alt="header"/>
+</picture>
+
+
+
       <section className={styles.container}>
         <Label
           title="DE 23 A 26 DE AGOSTO"

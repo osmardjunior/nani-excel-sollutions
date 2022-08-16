@@ -13,7 +13,7 @@ const Main = () => {
         dateDay="09/08"
         dateString="Terça-feira"
         blobSide={true}
-        isVideo={true}
+        isVideo={false} //quando recerber video trocar url e trocar false por true
         url="https://vimeo.com/738749613"
       />
 

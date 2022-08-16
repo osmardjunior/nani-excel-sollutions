@@ -52,12 +52,15 @@
 	position: relative;
 
 	width: Min(45ch + 1vw, 100vw - 2rem);
-
+	
 	text-align: center;
 	line-height: calc(2ex + 12px);
 
+
+	
+
 	&::before {
-		content: "";
+		content: ""; 
 
 		position: absolute;
 		top: calc(var(--gap_) / 2 * -1);
@@ -97,4 +100,13 @@
 
 		background-color: hsl(var(--clr-brand-aquamarine-hsl) / var(--alpha_));
 	}
+}
+.blurry{
+		position: relative;
+
+	width: Min(45ch + 1vw, 100vw - 2rem);
+	
+	text-align: center;
+	line-height: calc(2ex + 12px);
+	filter: blur(3px);
 }
