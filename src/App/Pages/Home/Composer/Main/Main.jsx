@@ -25,12 +25,10 @@ const PhotoSection = () => {
           <span>&nbsp;só 4 dias.</span>
         </h2>
 
-
-        
       </header>
       <Video 
-              isVideo={true}
-              url="https://vimeo.com/738749613"
+        isVideo={true}
+        url="https://vimeo.com/738749613"
       
       />
       <ul className={styles.photoSection__list}>
