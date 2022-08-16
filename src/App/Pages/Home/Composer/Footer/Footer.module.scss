@@ -115,5 +115,12 @@
 		&:focus-visible {
 			background-color: var(--clr-brand-aquamarine);
 		}
+		@media screen and (max-width: 640px) {
+			position: absolute;
+			bottom: 2rem;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		height: 120%;
 	}
 }

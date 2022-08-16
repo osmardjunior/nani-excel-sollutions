@@ -1,5 +1,7 @@
 import Button from "../../Components/Button/Button";
 import Social from "../../../../Components/Social/Social";
+import { useNavigate } from "react-router-dom";
+
 // <<<<<<< HEAD
 // =======
 
@@ -19,6 +21,13 @@ import { useState } from "react";
 
 const Footer = () => {
   const [phone, setPhone] = useState("");
+
+  const navigate = useNavigate();
+  function handleSubmit(e) {
+    e.preventDefault();
+    navigate("/thanks");
+  }
+
   return (
     <footer className={`${styles.footer} blur-blobs--bottom-right`} id="FORM">
       <div className={styles.wrapper}>
@@ -36,9 +45,7 @@ const Footer = () => {
         </p>
       </div>
 
-
-
-      <form className={styles.form} >
+     <form className={styles.form} onSubmit={handleSubmit}>
         <input className={styles.form__input} 
           required
           type="text" 
