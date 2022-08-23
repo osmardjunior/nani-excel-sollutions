@@ -50,11 +50,9 @@
 
 .description {
 	position: relative;
-
-	width: Min(45ch + 1vw, 100vw - 2rem);
-	
-	text-align: center;
-	line-height: calc(2ex + 12px);
+width: min(45ch + 1vw,100vw - 2rem);
+text-align: center;
+line-height: calc(2ex + 12px);
 
 
 	

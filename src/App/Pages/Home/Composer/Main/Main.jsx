@@ -24,13 +24,8 @@ const PhotoSection = () => {
           Excel na prática em
           <span>&nbsp;só 4 dias.</span>
         </h2>
-
       </header>
-      <Video 
-        isVideo={true}
-        url="https://vimeo.com/738749613"
-      
-      />
+      <Video isVideo={true} url="https://vimeo.com/738749613" />
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
         <Card text={"Estudos de casos reais"} icon="pensil" />
@@ -44,8 +39,7 @@ const PhotoSection = () => {
         title="Garanta sua vaga"
         classes={styles.photoSection__button}
         link="#FORM"
-      /> 
-
+      />
     </section>
   );
 };
@@ -69,46 +63,34 @@ const ClassesSection = () => {
         idLabelledbyCard="class-1"
         title="SUPERAULA 1"
         dateDay="23/08"
-        dateString="Segunda-Feira"
-        description=" Matemática básica (soma; subtração; divisão; multiplicação e porcentagem)
-        Formatação de planilha
-        Colar Especial
-        Preenchimento relâmpago
-        Inserir e Formatar objetos
-        Gráfico padrão
-        Lógica e Função SE."
+        dateString="Terça-Feira"
+        description=" Matemática básica (soma; subtração; divisão; multiplicação e porcentagem) Formatação de planilha; Colar Especial; Preenchimento relâmpago; Inserir e Formatar objetos Gráfico padrão; Lógica e Função SE."
       />
       <ClassesComponent
         className={` blur-blobs--right`}
         idLabelledbyCard="class-2"
         title="AULA 2"
         dateDay="24/08"
-        dateString="Terça-feira"
-        description="Formatação Condicional
-        Condicionais matemáticas com um e mais critérios
-        Tratamento e Validação de Dados
-        Aninhamento de funções condicionais
-        Gráficos Combinados
-        PROCV / PROCH."
+        dateString="Quarta-Feira"
+        description="  Formatação Condicional; Condicionais matemáticas com um e mais critérios;
+        
+        Tratamento e Validação de Dados; 
+        Aninhamento de funções condicionais;
+         Gráficos Combinados; 
+         PROCV e PROCH."
       />
       <ClassesComponent
         idLabelledbyCard="class-3"
         title="AULA 3"
         dateDay="25/08"
-        dateString="Quarta-feira"
-        description="PROCX
-        Tabela Dinâmica
-        Como solucionar problemas de Fórmulas
-        Trabalhando com funções de Tempo e Texto
-        Gestão de Dados
-        Gráficos Dinâmicos."
+        dateString=" Quinta-feira"
+        description="PROCX; Tabela Dinâmica; Como solucionar problemas de Fórmulas; Trabalhando com funções de Tempo e Texto; Gestão de Dados; Gráficos Dinâmicos."
       />
-         <ClassesComponent
+      <ClassesComponent
         idLabelledbyCard="class-4"
         title="MASTERCLASS"
-        dateDay="26/08" 
+        dateDay="26/08"
         dateString="Sexta-feira"
-
         blurry="Variações do PROCV,
         Solver,
         Macro com Edição,
@@ -116,7 +98,6 @@ const ClassesSection = () => {
         Suplementos Power do Excel
         Dashboard."
       />
-     
     </section>
   );
 };
@@ -134,13 +115,47 @@ const TeacherSection = () => {
       </header>
 
       <ul className={styles.teacherSection__list}>
-{/* <<<<<<< HEAD */}
-         <TeacherCard imgUlr={"Lucas"} name={"Lucas Ferronato"} desciption={"Instrutor na Excel Solutions Brasil"} longDescription={"Formado em Administração pela PUC-PR e Especialista em Análise de Dados. Atualmente é instrutor na Excel Solutions Brasil e Engenheiro de Software na SAE Digital S.A"}/>
-         <TeacherCard imgUlr={"Adriana"} name={"Adriana Fontana"} desciption={"Instrutora na Excel Solutions Brasil"} longDescription={"Formada em Contabilidade pela USP, com MBA e Mestrado na FAE e FGV, respectivamente.Atualmente é instrutora na Excel Solutions Brasil e Business Consultant na Go On Consulting."}/>
-         <TeacherCard imgUlr={"Altamir"} name={"Altamir Pereira"} desciption={"Instrutor na Excel Solutions Brasil"} longDescription={"Formado em Engenharia Civil pela UFPR e mestrando na mesma instituição. Atualmente é Engenheiro de Projetos Estruturais na EGEL Engenharia Ltda."}/>
-         <TeacherCard imgUlr={"Joelson"} name={"Joelson Gomes"} desciption={"CEO da Excel Solutions Brasil"} longDescription={"Formado em Ciência da Computação pela UTP. É fundador e CEO da Excel Solutions Brasil, além de criador do método de ensino revolucionário da empresa."}/>
-         <TeacherCard imgUlr={"Paola"} name={"Paola Bertolae"} desciption={"Gerente Comercial na Excel Solutions Brasil"} longDescription={"Formada em Administração de Empresas pela PUC-PR. Atualmente é Gerente Comercial na Excel Solutions Brasil, onde está há mais de 4 anos."}/> 
-
+        {/* <<<<<<< HEAD */}
+        <TeacherCard
+          imgUlr={"Lucas"}
+          name={"Lucas Ferronato"}
+          desciption={"Instrutor na Excel Solutions Brasil"}
+          longDescription={
+            "Formado em Administração pela PUC-PR e Especialista em Análise de Dados. Atualmente é instrutor na Excel Solutions Brasil e Engenheiro de Software na SAE Digital S.A"
+          }
+        />
+        <TeacherCard
+          imgUlr={"Adriana"}
+          name={"Adriana Fontana"}
+          desciption={"Instrutora na Excel Solutions Brasil"}
+          longDescription={
+            "Formada em Contabilidade pela USP, com MBA e Mestrado na FAE e FGV, respectivamente.Atualmente é instrutora na Excel Solutions Brasil e Business Consultant na Go On Consulting."
+          }
+        />
+        <TeacherCard
+          imgUlr={"Altamir"}
+          name={"Altamir Pereira"}
+          desciption={"Instrutor na Excel Solutions Brasil"}
+          longDescription={
+            "Formado em Engenharia Civil pela UFPR e mestrando na mesma instituição. Atualmente é Engenheiro de Projetos Estruturais na EGEL Engenharia Ltda."
+          }
+        />
+        <TeacherCard
+          imgUlr={"Joelson"}
+          name={"Joelson Gomes"}
+          desciption={"CEO da Excel Solutions Brasil"}
+          longDescription={
+            "Formado em Ciência da Computação pela UTP. É fundador e CEO da Excel Solutions Brasil, além de criador do método de ensino revolucionário da empresa."
+          }
+        />
+        <TeacherCard
+          imgUlr={"Paola"}
+          name={"Paola Bertolae"}
+          desciption={"Gerente Comercial na Excel Solutions Brasil"}
+          longDescription={
+            "Formada em Administração de Empresas pela PUC-PR. Atualmente é Gerente Comercial na Excel Solutions Brasil, onde está há mais de 4 anos."
+          }
+        />
       </ul>
     </section>
   );
