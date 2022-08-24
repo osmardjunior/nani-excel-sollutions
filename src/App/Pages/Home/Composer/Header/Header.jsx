@@ -21,8 +21,10 @@ function Header() {
 
 
       <section className={styles.container}>
+        <p ClassName={styles.novo}>NOVAS DATAS</p>
         <Label
-          title="DE 23 A 26 DE AGOSTO"
+          
+          title="DE 30/08 A 02/09"
           classes={styles.label}
           theme={false}
         />

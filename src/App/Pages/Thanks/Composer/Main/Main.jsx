@@ -10,7 +10,7 @@ const Main = () => {
 
       <TopWrapper
         title="Aula 1"
-        dateDay=""
+        dateDay="30/08"
         dateString="Terça-feira"
         blobSide={true}
         isVideo={false} //quando recerber video trocar url e trocar false por true
@@ -20,7 +20,7 @@ const Main = () => {
    
       <TopWrapper
         title="Aula 2"
-        dateDay=""
+        dateDay="31/08"
         dateString="Quarta-feira"
         blobSide={false}
         isVideo={false}
@@ -28,7 +28,7 @@ const Main = () => {
       />
       <TopWrapper
         title="Aula 3"
-        dateDay=""
+        dateDay="01/09"
         dateString="Quinta-feira"
         blobSide={true}
         isVideo={false}
@@ -37,7 +37,7 @@ const Main = () => {
       
       <TopWrapper
         title="MasterClass"
-        dateDay=""
+        dateDay="02/09"
         dateString="Sexta-feira"
         blobSide={false}
         isVideo={false}

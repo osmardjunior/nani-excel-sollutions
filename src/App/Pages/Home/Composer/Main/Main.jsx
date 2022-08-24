@@ -62,7 +62,7 @@ const ClassesSection = () => {
       <ClassesComponent
         idLabelledbyCard="class-1"
         title="SUPERAULA 1"
-        dateDay="23/08"
+        dateDay="30/08"
         dateString="Terça-Feira"
         description=" Matemática básica (soma; subtração; divisão; multiplicação e porcentagem) Formatação de planilha; Colar Especial; Preenchimento relâmpago; Inserir e Formatar objetos Gráfico padrão; Lógica e Função SE."
       />
@@ -70,7 +70,7 @@ const ClassesSection = () => {
         className={` blur-blobs--right`}
         idLabelledbyCard="class-2"
         title="AULA 2"
-        dateDay="24/08"
+        dateDay="31/08"
         dateString="Quarta-Feira"
         description="  Formatação Condicional; Condicionais matemáticas com um e mais critérios;
         
@@ -82,14 +82,14 @@ const ClassesSection = () => {
       <ClassesComponent
         idLabelledbyCard="class-3"
         title="AULA 3"
-        dateDay="25/08"
+        dateDay="01/09"
         dateString=" Quinta-feira"
         description="PROCX; Tabela Dinâmica; Como solucionar problemas de Fórmulas; Trabalhando com funções de Tempo e Texto; Gestão de Dados; Gráficos Dinâmicos."
       />
       <ClassesComponent
         idLabelledbyCard="class-4"
         title="MASTERCLASS"
-        dateDay="26/08"
+        dateDay="02/09"
         dateString="Sexta-feira"
         blurry="Variações do PROCV,
         Solver,

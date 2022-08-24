@@ -44,12 +44,21 @@
 	display: grid;
 	grid-auto-rows: min-content;
 	place-items: center;
-	gap: 1rem;
+	gap: 9px;
 
 	padding-block: $padding;
 	padding-inline: $half-padding;
 
 	// width: Min(100%, 100vw - 2rem);
+	&::before {
+		content: "";
+
+		grid-row: 1/2;
+		width: 14rem;
+		height: 3px;
+
+		background-color: var(--clr-brand-aquamarine);
+	}
 
 	@include media(lg) {
 		grid-row: 1 / span 1;
@@ -59,7 +68,21 @@
 		place-items: unset;
 		place-content: center;
 		padding-inline: $half-padding 0;
+		
 	}
+
+	
+p {
+	margin-left: 3rem;
+	color: #00E19B;
+	background: #00140d;
+	margin-right: 19rem;
+transform: translateY(-100%);
+
+text-align: center;
+
+}
+
 
 	.button {
 		padding: -1.1rem 4rem;
