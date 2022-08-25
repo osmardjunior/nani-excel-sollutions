@@ -54,8 +54,8 @@
 		content: "";
 
 		grid-row: 1/2;
-		width: 14rem;
-		height: 3px;
+		width: 13.5rem;
+		height: 1px;
 
 		background-color: var(--clr-brand-aquamarine);
 	}
@@ -73,14 +73,22 @@
 
 	
 p {
-	margin-left: 3rem;
+	margin-left: 17rem;
 	color: #00E19B;
-	background: #00140d;
-	margin-right: 19rem;
-transform: translateY(-100%);
+	background: #001a11;
+	margin-right: 17rem;
+    transform: translateY(-100%);
 
-text-align: center;
+    text-align: center;
 
+	@include media(lg) {
+		margin-left: 3rem;
+		background: #00140d;
+		margin-right: 18rem;
+		transform: translateY(-90%);
+		text-align: center;
+
+	}
 }
 
 
@@ -123,13 +131,13 @@ text-align: center;
 	font-style: italic;
 	font-size: 2.1rem;
 	font-weight: 700;
-
+	transform: translateY(-16%);
 	@include media(sm) {
 		--align_: start;
 	}
 }
 
-.list {
+.list { 
 	display: grid;
 	gap: 0.9rem;
 	font-size: 1.125rem;
@@ -162,6 +170,7 @@ text-align: center;
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 0.025em;
+			transform: translateY(-37%);
 
 			&::before {
 				content: none;
