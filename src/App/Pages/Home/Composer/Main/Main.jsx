@@ -25,7 +25,7 @@ const PhotoSection = () => {
           <span>&nbsp;só 4 dias.</span>
         </h2>
       </header>
-      <Video isVideo={true} url="https://vimeo.com/738749613" />
+      <Video isVideo={true} url="https://player.vimeo.com/video/743032272?h=fe16a9c51e" />
       <ul className={styles.photoSection__list}>
         <Card text={"Material didático próprio"} icon="book" />
         <Card text={"Estudos de casos reais"} icon="pensil" />
