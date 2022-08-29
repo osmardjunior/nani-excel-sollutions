@@ -2,22 +2,13 @@ import Button from "../../Components/Button/Button";
 import Social from "../../../../Components/Social/Social";
 import { useNavigate } from "react-router-dom";
 
-// <<<<<<< HEAD
-// =======
 
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 import styles from "./Footer.module.scss";
 import ButtonForm from "../../Components/Button/ButtonForm";
 import { maskPhone } from "../../../../utils/masks";
 import { useState } from "react";
 
 
-
-// <<<<<<< HEAD
-// // W w 
-// =======
-// // W w
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
 
 const Footer = () => {
   const [phone, setPhone] = useState("");
@@ -29,10 +20,10 @@ const Footer = () => {
   }
 
   return (
-    <footer className={`${styles.footer} blur-blobs--bottom-right`} id="FORM">
+    <footer className={`${styles.footer} `} id="FORM">
       <div className={styles.wrapper}>
         <img
-          src="/assets/footer/excel-na-pratica.svg"
+          src="/assets/footer/excel-na-pratica.svg" 
           alt="Logo da plataforma"
         />
         <img
@@ -65,7 +56,6 @@ const Footer = () => {
           value={phone}
           onInput={(e) => setPhone(maskPhone(e.currentTarget.value))}
         />
-{/* <<<<<<< HEAD */}
         <input
           required
           className={styles.form__input}

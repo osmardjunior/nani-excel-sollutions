@@ -1,9 +1,14 @@
 @use "../../../../Styles/Abstracts/" as *;
 
+header {
+	display: grid;
+	justify-content: center;
+}
+
 .header {
 	display: grid;
 	width: 100%;
-
+	
 
 	user-select: none;
 
@@ -23,7 +28,10 @@
 
 	
 
-	@media(sm) {}
+	@media(sm) {
+
+
+	}
 		
 	
 	
@@ -137,7 +145,7 @@ p {
 	}
 }
 
-.list { 
+.list {  
 	display: grid;
 	gap: 0.9rem;
 	font-size: 1.125rem;
@@ -209,3 +217,4 @@ p {
 	width: fit-content;
 	height: fit-content;
 }
+

@@ -4,8 +4,16 @@
   --title-size: 2rem;
 
   display: grid;
-  justify-items: center;
-
+  justify-items: space-around;
+  height: max-content;
+  display: grid;
+  gap: var(--space-between);
+  background-color: var(--clr-surface-100);
+  color: var(--clr-text-100);
+  font-family: Rubik,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  isolation: isolate;
+  zoom: 80%;
+  overflow: hidden;
   isolation: isolate;
 }
 
@@ -16,6 +24,7 @@
 
   display: grid;
   place-items: center;
+  justify-content: space-evenly;
   gap: 7rem;
 
   overflow: hidden;
@@ -28,12 +37,7 @@
     margin-inline: auto;
 
     width: Min(29ch, 100vw - 2rem);
-// =======
-//   &__title {
-//     margin-inline: auto;
-
-//     width: Min(30ch, 100vw - 2rem);
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+    justify-content: space-evenly;
 
     text-align: center;
 
@@ -54,17 +58,11 @@
     }
   }
 
-// <<<<<<< HEAD
 
-
-
-
-// =======
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
   &__image {
     position: relative;
     width: Min(100vw - 3rem, 50rem);
-
+    justify-content: space-evenly;
     &::before {
       content: "";
       position: absolute;
@@ -87,8 +85,8 @@
   &__list {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;   
+     flex-wrap: wrap;
     gap: 5rem;
 
     margin-inline: auto;
@@ -105,7 +103,7 @@
     margin-top: 2rem;
     width: fit-content;
     height: fit-content;
-  
+    justify-content: space-evenly;
     color: var(--clr-surface-100);
   
     font-weight: 900;
@@ -142,7 +140,7 @@
   display: grid;
   place-content: center;
   gap: 3rem;
-
+  justify-content: space-evenly;
   width: 100%;
  
   margin-top: 7rem;
@@ -172,6 +170,7 @@ font-style: italic;
 
     @include media(sm) {
       font-size: var(--font-size-flued-500);
+      float: none;
     }
 
     > span {
@@ -184,7 +183,7 @@ font-style: italic;
   display: grid;
   place-content: center;
   gap: 3rem;
-
+  justify-content: space-evenly;
   margin-block: 3.5rem;
   padding-block: 3.5rem;
 
@@ -200,11 +199,8 @@ font-style: italic;
   &__title {
     margin-inline: auto;
 
-// <<<<<<< HEAD
     width: Min(23ch, 100vw - 2rem);
-// =======
-//     width: Min(35ch, 100vw - 2rem);
-// >>>>>>> 12911c3c34f7c707741d6d99a758735855eddc2d
+
 
     text-align: center;
 
@@ -242,10 +238,17 @@ font-style: italic;
   }
 
   &__brands {
-    display: inline-flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem 1rem;
+  }
+}
+
+@media (sm){
+  body {
+    display: grid;
+    justify-content: space-around;
   }
 }

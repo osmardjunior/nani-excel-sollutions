@@ -15,8 +15,9 @@ const PhotoSection = () => {
 
   return (
     <section
-      className={`${styles.photoSection} blur-blobs--right`}
+      className={`${styles.photoSection} `}
       aria-labelledby={idLabelledby}
+      id="wrapper"
     >
       <header>
         <h2 className={styles.photoSection__title} itemID={idLabelledby}>

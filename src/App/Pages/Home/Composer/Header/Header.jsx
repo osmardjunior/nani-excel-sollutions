@@ -1,33 +1,25 @@
 import styles from "./Header.module.scss";
 import Button from "../../Components/Button/Button";
 import Label from "../../../../Components/Label/Label";
-import ImageLarge from "../../../../../../public/assets/background/bg-widescreen.png"
-import ImageSmall from "../../../../../../public/assets/background/mobile4.svg"
-import imgLarg from "../../../../../../public/assets/background/mobile4.svg"
+import ImageLarge from "../../../../../../public/assets/background/bg-widescreen.png";
+import ImageSmall from "../../../../../../public/assets/background/mobile4.svg";
+import imgLarg from "../../../../../../public/assets/background/mobile4.svg";
 
 function ListItems({ info }) {
   return <li className={styles.list__item}>{info}</li>;
 }
-function Header() { 
+function Header() {
   return (
-    <header className={styles.header}> 
-
-<picture className={styles.bg}>
-  <source media="(min-width:720px)" srcSet={ImageLarge}/>
-  <source media="(min-width:0px)" srcSet={ImageSmall}/>
-  <img className={styles.mobile} src="mobile4.svg" alt="header"/>
-</picture>
-
-
+    <header className={styles.header}>
+      <picture className={styles.bg}>
+        <source media="(min-width:720px)" srcSet={ImageLarge} />
+        <source media="(min-width:0px)" srcSet={ImageSmall} />
+        <img className={styles.mobile} src="mobile4.svg" alt="header" />
+      </picture>
 
       <section className={styles.container}>
         <p ClassName={styles.novo}>NOVAS DATAS</p>
-        <Label
-          
-          title="DE 30/08 A 02/09"
-          classes={styles.label}
-          theme={false}
-        />
+        <Label title="DE 30/08 A 02/09" classes={styles.label} theme={false} />
 
         <h1 className={styles.title}>
           3 SUPER-AULAS GRATUITAS + 1 MASTERCLASS PARA VOCÊ SAIR DO ZERO
