@@ -213,12 +213,16 @@ font-style: italic;
     display: flex;
     flex-wrap: wrap-reverse;
 
-    gap: 3rem;
+    gap: 2rem;
     transition: transform 0.5s;
     justify-content: center;
     align-items: center;
   }
-}
+  @media screen and (min-width: 357px) {
+		gap: 3rem;
+	}
+  }
+
 
 .brandSection {
   display: grid;
@@ -238,7 +242,7 @@ font-style: italic;
   }
 
   &__brands {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
